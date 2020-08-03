@@ -17,6 +17,16 @@ I contributed to open-up a new market segment (middle school) expanding the prod
 
 To make the development possible I work across different internal teams (from Hardware to Firmware, and Software, to supply chain, etc.). 
 
+### Education
+
+- *Oct 2019 - Feb 2020* UC Berkeley, Haas School of Business Product Management Program Certificate
+- *Nov 2015* University of California, San Diego
+  - Course in Human Centered Design: an Introduction Certificate
+- *Oct 2010 - Dec 2013* Università degli Studi di Roma Tre, Rome BS Education
+  - Graduated with distinct honours (110 cum Laude)
+  - Awarded Erasmus Placement Bursary at London Metropolitan University
+  - Awarded IT, A/V support, Moodle (e-learning) support bursaries
+
 ### How I work 
 
 Research | Plan | Test & Iterate | Deploy
