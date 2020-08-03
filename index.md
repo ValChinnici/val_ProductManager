@@ -35,8 +35,11 @@ Developed in partnership with Google, the Arduino Science Kit Physics Lab is an 
 ##### Goal
 Create a simple, affordable, out-of-the-box experience for Science teachers, teaching Physics. Open up a new Education Segment (middle school).
 
+##### Challenges
+Opening up a new segment market provided a series of challenges, starting from the curriculum requirements, to the health and safety compliance, as well as online privacy for kids (COPPA COMPLIANCE). 
+
 ##### Approach
-I started researching on the way teachers were using Arduino in the classroom, in order to figure out if there were new ways of promoting Arduino in a classroom setting. Arduino was already largely used in high-schools and universities as datalogger tool, or cheaper alternative to expensive lab equipment. We decided to allow also younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup. We came up with an integrated approach which is combining: custom-made hardware and assembly pieces, content for the teachers and students alike, and a custom integration for the open-source mobile platform to check the progress of the data stream (Google Science Journal). 
+I started researching on the way teachers were using Arduino in the classroom, in order to figure out if there were new ways of promoting Arduino in a classroom setting. Arduino was already largely used in high-schools and universities as datalogger tool, or cheaper alternative to expensive lab equipment. We decided to allow younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup. We came up with an integrated approach which is combining: custom-made hardware and assembly pieces, content for the teachers and students alike, and a custom integration for the open-source mobile platform to check the progress of the data stream (Google Science Journal). We setup a rapid prototype session in conjunction with the activities content outlines. Hardware was following according to the iterative findings as we developed the product. 
 
 ##### Results
 Arduino was the only partner selected as official integration in the official Science Journal app for Android by Google. The kit was successfully tested in the classroom, and teachers loved the ease-of-use of the kit. The content, activities, hardware were built from scratch. Thanks to the integration between the physical kit and the digital contents and app, kids and teachers could really have a comprehensive educational experience. Due to the target audience we translated the content in several languages. 
@@ -44,7 +47,7 @@ Arduino was the only partner selected as official integration in the official Sc
 ![Arduino Science Kit](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/a/k/akx00014_featured_new.jpg)
 
 ##### Demo Lesson
-[Arduino Science Kit Physics Lab -- The Pirate Ship](https://physics-lab.arduino.cc/activities/the-pirate-ship)
+Take a look at the preview lesson we published online: [Arduino Science Kit Physics Lab -- The Pirate Ship](https://physics-lab.arduino.cc/activities/the-pirate-ship)
 
 ### About me
 
