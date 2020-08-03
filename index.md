@@ -18,6 +18,20 @@ Research | Plan | Test & Iterate | Deploy
 ------------ | ------------- | ------------- | -------------
 Understand the _Job to be done_. Explore competitors. Identify strategic opportunities. Outline requirements. | Work cross-teams to build products that consistently combine compelling design, smooth interactions, functional code, streamlined production. | Test prototypes with final users. Iterate and improve. | Communicate. Create a compelling narrative for the customers. Create visuals for launch campaign. 
 
+### Portfolio
+
+#### Arduino Science Kit Physics Lab
+
+![Arduino Science Kit](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/a/k/akx00014_featured_new.jpg)
+Developed in partnership with Google, the Arduino Science Kit Physics Lab is an Arduino-based physics lab, fully compatible with Google Science Journal available on Android.
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://youtu.be/4-U3JcdMoe0" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+
 ```markdown
 Syntax highlighted code block
 
