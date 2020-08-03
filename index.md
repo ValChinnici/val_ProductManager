@@ -48,13 +48,13 @@ Arduino was the only partner selected as official integration in the official Sc
 
 ### About me
 
-> _I am a part of all that I have met;
+> I am a part of all that I have met;
 > 
 > Yet all experience is an arch wherethrough
 > 
 > Gleams that untravelled world, whose margin fades
 > 
-> For ever and for ever when I move._
+> For ever and for ever when I move.
 > Alfred Tennyson
 
 I love traveling and knowing local people. 
