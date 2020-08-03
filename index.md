@@ -17,7 +17,7 @@ I contributed to open-up a new market segment (middle school) expanding the prod
 
 To make the development possible I work across different internal teams (from Hardware to Firmware, and Software, to supply chain, etc.). 
 
-### How I work :repeat:
+### How I work 
 
 Research | Plan | Test & Iterate | Deploy
 ------------ | ------------- | ------------- | -------------
@@ -30,6 +30,7 @@ Understand the _Job to be done_. Explore competitors. Identify strategic opportu
 Developed in partnership with Google, the Arduino Science Kit Physics Lab is an Arduino-based physics lab, fully compatible with Google Science Journal available on Android.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-U3JcdMoe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ##### Goal
 Create a simple, affordable, out-of-the-box experience for Science teachers, teaching Physics. Open up a new Education Segment (middle school).
