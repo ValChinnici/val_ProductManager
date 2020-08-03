@@ -45,3 +45,20 @@ Arduino was the only partner selected as official integration in the official Sc
 
 ##### Demo Lesson
 [Arduino Science Kit Physics Lab -- The Pirate Ship](https://physics-lab.arduino.cc/activities/the-pirate-ship)
+
+### About me
+
+> _I am a part of all that I have met;
+> Yet all experience is an arch wherethrough
+> Gleams that untravelled world, whose margin fades
+> For ever and for ever when I move._
+> Alfred Tennyson
+
+I love traveling and knowing local people. 
+
+I have recently discovered a passion for hiking and I do that with my tiny dog Aldi (yes, the same name as the supermarket). 
+
+I instituted a safe space for mental health in the workplace as a response to the current Covid-19 pandemic, providing colleagues with selected personal and mental wellbeing articles, healthy check-ins reminders, and promoting the importance of a positive workplace culture. I have also started an [Instagram account in Italian](https://www.instagram.com/scrignofelice/) to support people who struggle with mental health.  
+
+
+
