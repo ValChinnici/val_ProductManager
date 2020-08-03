@@ -25,11 +25,7 @@ Understand the _Job to be done_. Explore competitors. Identify strategic opportu
 ![Arduino Science Kit](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/a/k/akx00014_featured_new.jpg)
 Developed in partnership with Google, the Arduino Science Kit Physics Lab is an Arduino-based physics lab, fully compatible with Google Science Journal available on Android.
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe src="https://youtu.be/4-U3JcdMoe0" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4-U3JcdMoe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ```markdown
