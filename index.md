@@ -14,9 +14,9 @@ To make the development possible I work across different internal teams (from Ha
 
 ### How I work
 
-Research | Second Header | Second Header
------------- | ------------- | -------------
-Understand the _Job to be done_. Explore competitors. Identify strategic opportunities. Outline requirements. | Content from cell 2
+Research | Plan | Test & Iterate | Deploy
+------------ | ------------- | ------------- | -------------
+Understand the _Job to be done_. Explore competitors. Identify strategic opportunities. Outline requirements. | Work cross-teams to build products that consistently combine compelling design, smooth interactions, functional code, streamlined production. | Test prototypes with final users. Iterate and improve. | Communicate. Create a compelling narrative for the customers. Create visuals for launch campaign. 
 
 ```markdown
 Syntax highlighted code block
