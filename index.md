@@ -12,7 +12,7 @@ I contributed to open-up a new market segment (middle school) expanding the prod
 
 To make the development possible I work across different internal teams (from Hardware to Firmware, and Software, to supply chain, etc.). 
 
-### How I work
+### How I work :repeat:
 
 Research | Plan | Test & Iterate | Deploy
 ------------ | ------------- | ------------- | -------------
