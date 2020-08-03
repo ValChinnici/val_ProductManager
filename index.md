@@ -1,6 +1,9 @@
 ## Hiya! I am Valentina Chinnici! 
 
-[![Twitter: @SorciereRouge](https://img.shields.io/badge/Twitter-%40SorciereRouge-blue)](https://twitter.com/sorciererouge)
+![Profile Pic](https://media-exp1.licdn.com/dms/image/C4D03AQFEvzQzTEqAiQ/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=NWnsVdMJELjBANFGkI3Y-00XTcpT1Ke3fQK5O5aa76k)
+
+[![Twitter: @SorciereRouge](https://img.shields.io/badge/Twitter-%40SorciereRouge-RGB(62%2C%20255%2C%20255))](https://twitter.com/sorciererouge)
+[![Linkedin: Valentina Chinnici](https://img.shields.io/badge/Linkedin-Valentina%20Chinnici-blue)](https://www.linkedin.com/in/valentinachinnici/)
 
 I am Valentina Chinnici: a passionate, value-driven Product Manager with experience leading the development of complex digital and physical products & kits for STEAM Education, Maker Education, and SaaS. 
 Since 2013 I’ve worked at STEAM, Education technology companies.
@@ -41,31 +44,3 @@ Arduino was the only partner selected as official integration in the official Sc
 
 ##### Demo Lesson
 [Arduino Science Kit Physics Lab -- The Pirate Ship](https://physics-lab.arduino.cc/activities/the-pirate-ship)
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nuzza412/val_ProductManager/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
