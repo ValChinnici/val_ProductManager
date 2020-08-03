@@ -1,12 +1,16 @@
-## Welcome to GitHub Pages
+## Hiya! I am Valentina Chinnici! 
 
-You can use the [editor on GitHub](https://github.com/nuzza412/val_ProductManager/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+I am Valentina Chinnici: a passionate, value-driven Product Manager with experience leading the development of complex digital and physical products & kits for STEAM Education, Maker Education, and SaaS. 
+Since 2013 I’ve worked at STEAM, Education technology companies.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Where I work
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I am currently Product Owner at Arduino. In my current role, I am responsible for defining the roadmap, and product milestones, as well as managing the backlog on JIRA. I do also work on the product lifecycle as well as the go-to-market strategy in collaboration with the marketing team (I have a strong background in marketing). Although I believe the most exciting part of my job is to identify the _Jobs to be done_, and listening to the customers’ needs. 
+
+I contributed to open-up a new market segment (middle school) expanding the product portfolio with the Arduino Science Kit Physics Lab: an educational kit which combines custom-made hardware based on the Arduino WiFi 1010 board, a dedicated CMS to host content (available in 6 languages) as well as additional learning, teaching materials, an BLE integration for the Google’s Science Journal App. I managed everything from competitors’ analysis, to the concept up until the deployment to the market by the announced deadline. To make the development possible I work across different internal teams (from HW to FW, to supply chain, etc.). 
+
+
 
 ```markdown
 Syntax highlighted code block
