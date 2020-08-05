@@ -57,16 +57,25 @@ We setup rapid prototype sessions in conjunction with the activities content out
 
 ##### Idea Management
 I started researching on the way teachers were using Arduino in the classroom, in order to figure out if there were new ways of promoting Arduino in a classroom setting. Arduino was already largely used in high-schools and universities as datalogger tool, or cheaper alternative to expensive lab equipment. One of the best example to this was the workshop led by Professor Organtini, University La Sapienza in Rome, with his "Arduino and the smartphone" lab. 
-We decided to allow younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup.
+We decided to allow younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup. The kit was mapped with NGSS and UK National Science Curriculum.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">With the Arduino Science Kit Physics Lab, students can conduct nine exciting projects inspired by popular fairground rides like the Gravitron and Pirate Ship! <a href="https://t.co/FprfbnbqWv">https://t.co/FprfbnbqWv</a> <a href="https://twitter.com/hashtag/Bett2019?src=hash&amp;ref_src=twsrc%5Etfw">#Bett2019</a> <a href="https://t.co/jFOC0o6ced">pic.twitter.com/jFOC0o6ced</a></p>&mdash; Arduino (@arduino) <a href="https://twitter.com/arduino/status/1089158257288142848?ref_src=twsrc%5Etfw">January 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ##### Specifications
 The Arduino Science Kit had some pretty clear software specifications: the Android integration worked over BLE therefore we had to build a protocol and a Firmware that could communicate easily and reliably. 
 We used a custom approach for the firmware, using a protocol similar to Firmata. 
 
 ![Arduino Science Kit](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/a/k/akx00014_featured_new.jpg)
+
+##### Delivery
+The delivery of the Arduino Science Kit was coordinated between Arduino & Google. We worked closely with Google's engineers, as well as our development team to deploy the Android integration on time, and review the codebase to be integrated seamlessly in the official Google Science Journal app available on the store. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/GScienceJournal?ref_src=twsrc%5Etfw">@GScienceJournal</a> is now live on the Play store with the brand new <a href="https://twitter.com/arduino?ref_src=twsrc%5Etfw">@Arduino</a> integration for the <a href="https://twitter.com/hashtag/Arduino?src=hash&amp;ref_src=twsrc%5Etfw">#Arduino</a> MKR WiFi 1010 board.<br>Available for you to download on Android and Chromebook (supporting Android) devices 📲<br>I cannot be more excited than today!!! 🌈🤩 Enjoy folks <a href="https://t.co/yAuD1VnRI6">pic.twitter.com/yAuD1VnRI6</a></p>&mdash; Valentina 瓦伦蒂娜 (@sorciererouge) <a href="https://twitter.com/sorciererouge/status/1130496494950408192?ref_src=twsrc%5Etfw">May 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I worked with the Marketing Team to build a communication plan, and be ready to feature the kit in the most important Educational trade shows events, thanks to the support of Google and our reseller partners. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last week, <a href="https://twitter.com/GScienceJournal?ref_src=twsrc%5Etfw">@GScienceJournal</a> x <a href="https://twitter.com/GoogleForEdu?ref_src=twsrc%5Etfw">@GoogleforEdu</a> showcased the new <a href="https://twitter.com/hashtag/ArduinoPhysicsLab?src=hash&amp;ref_src=twsrc%5Etfw">#ArduinoPhysicsLab</a> inside their booth at <a href="https://twitter.com/hashtag/NSTA19?src=hash&amp;ref_src=twsrc%5Etfw">#NSTA19</a> in St. Louis: <a href="https://t.co/aHs8HKtjj9">https://t.co/aHs8HKtjj9</a> <a href="https://t.co/WC19OdlQfo">pic.twitter.com/WC19OdlQfo</a></p>&mdash; Arduino (@arduino) <a href="https://twitter.com/arduino/status/1118183080664215556?ref_src=twsrc%5Etfw">April 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ##### Demo Lesson
 Take a look at the preview lesson we published online: [Arduino Science Kit Physics Lab -- The Pirate Ship](https://physics-lab.arduino.cc/activities/the-pirate-ship)
@@ -87,7 +96,8 @@ I love traveling and knowing local people.
 
 I have recently discovered a passion for hiking and I do that with my tiny dog Aldi (yes, the same name as the supermarket). 
 
+From time to time I do some hand modelling for some of our products. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A <a href="https://twitter.com/hashtag/blooper?src=hash&amp;ref_src=twsrc%5Etfw">#blooper</a> from the <a href="https://twitter.com/arduino?ref_src=twsrc%5Etfw">@arduino</a> Science Kit&#39;s content photo shooting by <a href="https://twitter.com/al_morici?ref_src=twsrc%5Etfw">@al_morici</a>. <br>After a few hours hand modelling, I gave up and started laughing. Alberto caught that moment perfectly (BTW I love this pic)! <a href="https://twitter.com/hashtag/ArduinoPhysicsLab?src=hash&amp;ref_src=twsrc%5Etfw">#ArduinoPhysicsLab</a> <a href="https://twitter.com/hashtag/ProductManagementLife?src=hash&amp;ref_src=twsrc%5Etfw">#ProductManagementLife</a> <a href="https://twitter.com/hashtag/HandModel?src=hash&amp;ref_src=twsrc%5Etfw">#HandModel</a>💁‍♀️ <a href="https://twitter.com/hashtag/GScienceJournal?src=hash&amp;ref_src=twsrc%5Etfw">#GScienceJournal</a> <a href="https://t.co/1Zf0PdX48C">pic.twitter.com/1Zf0PdX48C</a></p>&mdash; Valentina 瓦伦蒂娜 (@sorciererouge) <a href="https://twitter.com/sorciererouge/status/1125386717299650560?ref_src=twsrc%5Etfw">May 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 I instituted a safe space for mental health in the workplace as a response to the current Covid-19 pandemic, providing colleagues with selected personal and mental wellbeing articles, healthy check-ins reminders, and promoting the importance of a positive workplace culture. I have also started an [Instagram account in Italian](https://www.instagram.com/scrignofelice/) to support people who struggle with mental health.  
-
-
-
