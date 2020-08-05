@@ -48,11 +48,23 @@ Create a simple, affordable, out-of-the-box experience for Science teachers, tea
 ##### Challenges
 Opening up a new segment market provided a series of challenges, starting from the curriculum requirements, to the health and safety compliance, as well as online privacy for kids (COPPA COMPLIANCE). 
 
-##### Approach
-I started researching on the way teachers were using Arduino in the classroom, in order to figure out if there were new ways of promoting Arduino in a classroom setting. Arduino was already largely used in high-schools and universities as datalogger tool, or cheaper alternative to expensive lab equipment. We decided to allow younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup. We came up with an integrated approach which is combining: custom-made hardware and assembly pieces, content for the teachers and students alike, and a custom integration for the open-source mobile platform to check the progress of the data stream (Google Science Journal). We setup a rapid prototype session in conjunction with the activities content outlines. Hardware was following according to the iterative findings as we developed the product. 
+#### Approach
+We used a Kanban/Waterfall approach to manage the development of the hardware. Then an agile approach for content, design, and the software integration for Android. 
+We came up with an integrated approach which is combining: custom-made hardware and assembly pieces, content for the teachers and students alike, and a custom integration for the open-source mobile platform to check the progress of the data stream (Google Science Journal). 
+We setup rapid prototype sessions in conjunction with the activities content outlines. Hardware was following according to the iterative findings as we developed the product. 
 
-##### Results
-Arduino was the only partner selected as official integration in the official Science Journal app for Android by Google. The kit was successfully tested in the classroom, and teachers loved the ease-of-use of the kit. The content, activities, hardware were built from scratch. Thanks to the integration between the physical kit and the digital contents and app, kids and teachers could really have a comprehensive educational experience. Due to the target audience we translated the content in several languages. 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">From Prototype to product: a - very short - visual history of the Science Carrier board included in the <a href="https://twitter.com/hashtag/ArduinoPhysicsLab?src=hash&amp;ref_src=twsrc%5Etfw">#ArduinoPhysicsLab</a> <a href="https://t.co/gWkLtMeRJT">pic.twitter.com/gWkLtMeRJT</a></p>&mdash; Valentina 瓦伦蒂娜 (@sorciererouge) <a href="https://twitter.com/sorciererouge/status/1175000301209825280?ref_src=twsrc%5Etfw">September 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+##### Idea Management
+I started researching on the way teachers were using Arduino in the classroom, in order to figure out if there were new ways of promoting Arduino in a classroom setting. Arduino was already largely used in high-schools and universities as datalogger tool, or cheaper alternative to expensive lab equipment. One of the best example to this was the workshop led by Professor Organtini, University La Sapienza in Rome, with his "Arduino and the smartphone" lab. 
+We decided to allow younger kids to experiment sciences with a more affordable approach, simple to integrate in the curriculum with guidelines to map lessons to regular curriculum, and easy for the teacher to setup.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">With the Arduino Science Kit Physics Lab, students can conduct nine exciting projects inspired by popular fairground rides like the Gravitron and Pirate Ship! <a href="https://t.co/FprfbnbqWv">https://t.co/FprfbnbqWv</a> <a href="https://twitter.com/hashtag/Bett2019?src=hash&amp;ref_src=twsrc%5Etfw">#Bett2019</a> <a href="https://t.co/jFOC0o6ced">pic.twitter.com/jFOC0o6ced</a></p>&mdash; Arduino (@arduino) <a href="https://twitter.com/arduino/status/1089158257288142848?ref_src=twsrc%5Etfw">January 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+##### Specifications
+The Arduino Science Kit had some pretty clear software specifications: the Android integration worked over BLE therefore we had to build a protocol and a Firmware that could communicate easily and reliably. 
+We used a custom approach for the firmware, using a protocol similar to Firmata. 
 
 ![Arduino Science Kit](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/a/k/akx00014_featured_new.jpg)
 
