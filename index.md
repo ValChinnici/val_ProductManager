@@ -1,6 +1,5 @@
 ## Hiya! I am Valentina Chinnici! 
 
-![Profile Pic](https://media-exp1.licdn.com/dms/image/C4D03AQFEvzQzTEqAiQ/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=NWnsVdMJELjBANFGkI3Y-00XTcpT1Ke3fQK5O5aa76k)
 
 [![Twitter: @SorciereRouge](https://img.shields.io/badge/Twitter-%40SorciereRouge-RGB(62%2C%20255%2C%20255))](https://twitter.com/sorciererouge)
 [![Linkedin: Valentina Chinnici](https://img.shields.io/badge/Linkedin-Valentina%20Chinnici-blue)](https://www.linkedin.com/in/valentinachinnici/)
@@ -11,7 +10,7 @@ Since 2013 I’ve worked at STEAM, Education technology companies.
 
 ### Where I work
 
-I am currently Product Owner at Arduino. In my current role, I am responsible for defining the roadmap, and product milestones, as well as managing the backlog on JIRA. I do also work on the product lifecycle as well as the go-to-market strategy in collaboration with the marketing team (I have a strong background in marketing). Although I believe the most exciting part of my job is to identify the _Jobs to be done_, and listening to the customers’ needs. 
+I am currently Sr Product Marketing Manager for BEE Content design Inc. Previously I worked at Arduino as Product Manager. In my previous role, I was responsible for defining the roadmap, and product milestones, as well as managing the backlog on JIRA. I do also worked on the product lifecycle as well as the go-to-market strategy in collaboration with the marketing team (I have a strong background in marketing). Although I believe the most exciting part of my job is to identify the _Jobs to be done_, and listening to the customers’ needs. 
 
 I contributed to open-up a new market segment (middle school) expanding the product portfolio with the [Arduino Science Kit Physics Lab](https://store.arduino.cc/physics-lab): an educational kit which combines custom-made hardware, and firmware, based on the Arduino WiFi 1010 board, a dedicated CMS to host content (available in 6 languages) as well as additional learning/teaching materials, a BLE integration for the Google’s Science Journal App. I managed everything from competitors’ analysis, to the concept up until the deployment to the market by the announced deadline. 
 
@@ -19,6 +18,9 @@ To make the development possible I work across different internal teams (from Ha
 
 ### Education
 
+- *Dec 2022* Product School, Product-Led Growth Micro Certification
+- *Dec 2022* Pendo.io, Product-Led Certification
+- *Oct 2019 - Feb 2020* UC Berkeley, Haas School of Business Product Management Program Certificate
 - *Oct 2019 - Feb 2020* UC Berkeley, Haas School of Business Product Management Program Certificate
 - *Nov 2015* University of California, San Diego
   - Course in Human Centered Design: an Introduction Certificate
