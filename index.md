@@ -4,9 +4,7 @@
 [![Twitter: @SorciereRouge](https://img.shields.io/badge/Twitter-%40SorciereRouge-RGB(62%2C%20255%2C%20255))](https://twitter.com/sorciererouge)
 [![Linkedin: Valentina Chinnici](https://img.shields.io/badge/Linkedin-Valentina%20Chinnici-blue)](https://www.linkedin.com/in/valentinachinnici/)
 
-I am Valentina Chinnici: a passionate, value-driven Product Manager with experience leading the development of complex digital and physical products & kits for STEAM Education, Maker Education, and SaaS. 
-Since 2013 I’ve worked at STEAM, Education technology companies.
-
+I am Valentina Chinnici: a passionate, value-driven Product Manager with experience leading the development of complex digital and physical products & kits for STEAM Education, Maker Education, and B2B SaaS. 
 
 ### Where I work
 
