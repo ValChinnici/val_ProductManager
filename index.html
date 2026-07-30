@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentina Chinnici — AI Product Manager</title>
+<meta name="description" content="Valentina Chinnici — AI Product Manager, B2B SaaS. 8+ years building AI-powered products across MarTech and EdTech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16121f;
+    --ink-soft:#5b5468;
+    --paper:#FAF8F3;
+    --paper-dim:#F3EEF9;
+    --line:#E8E1F3;
+    --accent:#FF2E9A;
+    --accent2:#00E5FF;
+    --accent3:#B14EFF;
+    --accent-ink:#FF2E9A;
+    /* readable (higher-contrast) variants for small text on light backgrounds —
+       the raw neon tones above are for dark sections, glows and large gradient text only */
+    --accent-text:#D6127A;
+    --accent2-text:#007E96;
+    --accent3-text:#8B2FD1;
+    --dark:#150826;
+    --dark-line:#3D2168;
+    --cream-on-dark:#F3EFFF;
+    --radius:14px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    line-height:1.08;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  .accent{
+    background:linear-gradient(90deg,var(--accent-text),var(--accent3-text) 55%,var(--accent2-text));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    color:var(--accent-text);
+  }
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:100;
+    background:rgba(250,248,243,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;padding:18px 32px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .logo .dot{width:9px;height:9px;background:var(--accent);border-radius:50%;display:inline-block;}
+  nav.links{display:flex;gap:30px;align-items:center;}
+  nav.links a{font-size:14px;font-weight:600;color:var(--ink-soft);transition:color .15s;}
+  nav.links a:hover{color:var(--ink);}
+  .nav-cta{
+    background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:100px;
+    font-size:13px;font-weight:700;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--accent);}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:transform .2s ease,opacity .2s ease;}
+  .burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .burger.is-open span:nth-child(2){opacity:0;}
+  .burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:96px 0 64px;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;top:-220px;right:-160px;width:520px;height:520px;
+    background:radial-gradient(circle,rgba(255,46,154,0.28),transparent 70%);
+    filter:blur(6px);pointer-events:none;z-index:-1;
+  }
+  .hero::after{
+    content:"";position:absolute;top:-120px;left:-200px;width:440px;height:440px;
+    background:radial-gradient(circle,rgba(0,229,255,0.22),transparent 70%);
+    filter:blur(6px);pointer-events:none;z-index:-1;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;
+    text-transform:uppercase;letter-spacing:0.14em;color:var(--accent-text);
+    display:flex;align-items:center;gap:10px;margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent);}
+  .hero h1{font-size:clamp(38px,6vw,74px);font-weight:700;max-width:920px;}
+  .hero p.lede{
+    font-size:clamp(17px,1.9vw,20px);color:var(--ink-soft);max-width:640px;margin:26px 0 36px;
+  }
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:34px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 24px;border-radius:100px;font-weight:700;font-size:14.5px;
+    border:1.5px solid var(--ink);transition:all .18s ease;
+  }
+  .btn-primary{background:var(--ink);color:var(--paper);}
+  .btn-primary:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(255,46,154,0.55);}
+  .btn-ghost{background:transparent;color:var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(177,78,255,0.35);}
+  .hero-meta{
+    display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-soft);
+    font-family:'JetBrains Mono',monospace;
+  }
+  .hero-meta span{display:flex;align-items:center;gap:7px;}
+  .pulse{width:8px;height:8px;background:#2ecc71;border-radius:50%;display:inline-block;animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+  /* ---------- STATS STRIP ---------- */
+  .stats{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--paper-dim);
+  }
+  .stats-inner{
+    max-width:var(--maxw);margin:0 auto;padding:0 32px;
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .stat{padding:34px 24px;border-left:1px solid var(--line);}
+  .stat:first-child{border-left:none;}
+  .stat .num{
+    font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,3.2vw,40px);font-weight:700;
+    background:linear-gradient(90deg,var(--accent),var(--accent3));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--accent);
+  }
+  .stat .label{font-size:12.5px;color:var(--ink-soft);margin-top:6px;font-weight:600;}
+
+  /* ---------- SECTION HEADERS ---------- */
+  section{padding:96px 0;}
+  .sec-head{max-width:680px;margin-bottom:56px;}
+  .sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:700;}
+  .sec-head p{color:var(--ink-soft);font-size:16.5px;margin-top:14px;}
+
+  /* ---------- PILLARS ---------- */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .pillar{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:32px 28px;transition:transform .2s,border-color .2s;
+  }
+  .pillar:hover{transform:translateY(-4px);border-color:var(--ink);}
+  .pillar .idx{font-family:'JetBrains Mono',monospace;color:var(--accent-text);font-weight:600;font-size:13px;}
+  .pillar h3{font-size:20px;margin:14px 0 10px;}
+  .pillar p{color:var(--ink-soft);font-size:14.5px;margin:0;}
+
+  /* ---------- CASE STUDIES ---------- */
+  .case{
+    border-top:1px solid var(--line);
+    padding:72px 0;
+    display:grid;grid-template-columns:280px 1fr;gap:56px;
+  }
+  .case:last-child{padding-bottom:0;}
+  .case-meta{position:sticky;top:100px;align-self:start;}
+  .case-tag{
+    font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;
+    color:var(--accent-text);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;
+    display:block;
+  }
+  .case-meta dl{margin:22px 0 0;font-size:13px;}
+  .case-meta dt{color:var(--ink-soft);font-weight:600;margin-top:14px;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;}
+  .case-meta dd{margin:4px 0 0;font-weight:600;}
+  .case-badges{display:flex;flex-direction:column;gap:10px;margin-top:24px;}
+  .badge{
+    background:var(--paper-dim);border:1px solid var(--line);border-radius:10px;
+    padding:12px 14px;
+  }
+  .badge .num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;display:block;color:var(--accent2-text);}
+  .badge .txt{font-size:12px;color:var(--ink-soft);}
+
+  .case-body h3.title{font-size:clamp(24px,3vw,32px);margin-bottom:14px;max-width:560px;}
+  .case-body .hook{font-size:17px;color:var(--ink-soft);max-width:600px;margin-bottom:34px;}
+  .case-block{margin-bottom:26px;}
+  .case-block h4{
+    font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--ink);margin-bottom:8px;font-weight:600;
+  }
+  .case-block p{font-size:15.5px;color:var(--ink-soft);margin:0;max-width:640px;}
+  .case-block ul{margin:8px 0 0;padding-left:18px;color:var(--ink-soft);font-size:15.5px;}
+  .case-block li{margin-bottom:6px;}
+  blockquote{
+    border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:22px 0;
+    font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:500;
+    max-width:600px;color:var(--ink);
+  }
+  blockquote cite{
+    display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:13px;
+    color:var(--ink-soft);margin-top:8px;font-weight:600;
+  }
+  .hyp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;}
+  .hyp{
+    background:var(--paper-dim);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13.5px;
+  }
+  .hyp b{display:block;font-size:13.5px;margin-bottom:3px;color:var(--accent3-text);}
+
+  /* ---------- CLAUDE CODE (dark) ---------- */
+  .claude-sec{
+    background:
+      radial-gradient(ellipse 120% 60% at 50% -10%,rgba(177,78,255,0.35) 0%,transparent 60%),
+      linear-gradient(180deg,#1c0a38 0%,#0f0620 100%);
+    color:var(--cream-on-dark);border-radius:24px;margin:0 32px;padding:72px 48px;
+    position:relative;overflow:hidden;
+  }
+  .claude-sec::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--accent2),var(--accent),var(--accent3));
+  }
+  .claude-inner{max-width:calc(var(--maxw) - 64px);margin:0 auto;}
+  .claude-sec .eyebrow{color:var(--accent);}
+  .claude-sec h2{font-size:clamp(26px,3.6vw,40px);max-width:820px;font-weight:700;color:#fff;}
+  .claude-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;align-items:start;}
+  .claude-list{display:flex;flex-direction:column;gap:26px;}
+  .claude-item{display:flex;gap:16px;}
+  .claude-item .n{
+    font-family:'JetBrains Mono',monospace;color:var(--accent);font-weight:700;font-size:14px;flex-shrink:0;
+  }
+  .claude-item h4{color:#fff;font-size:16px;margin-bottom:6px;font-family:'Space Grotesk',sans-serif;}
+  .claude-item p{color:#B9B7AE;font-size:14.5px;margin:0;}
+  .terminal{
+    background:#17171B;border:1px solid var(--dark-line);border-radius:12px;overflow:hidden;
+  }
+  .term-bar{padding:12px 16px;border-bottom:1px solid var(--dark-line);display:flex;gap:7px;}
+  .term-bar span{width:10px;height:10px;border-radius:50%;background:#3a3a42;}
+  .term-body{padding:22px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.9;color:#C9C7BE;}
+  .term-body .g{color:#00FFA3;}
+  .term-body .o{color:var(--accent2);}
+  .term-body .c{color:#8a80a0;}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+  .skill-col h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:var(--accent-text);margin-bottom:18px;}
+  .skill-col:nth-child(2) h3{color:var(--accent3-text);}
+  .skill-col:nth-child(3) h3{color:var(--accent2-text);}
+  .tags{display:flex;flex-wrap:wrap;gap:9px;}
+  .tag{
+    border:1px solid var(--line);padding:8px 14px;border-radius:100px;font-size:13px;font-weight:600;
+    background:var(--paper);
+  }
+
+  /* ---------- EXPERIENCE ---------- */
+  .tl-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;}
+  .tl-filters{display:flex;flex-wrap:wrap;gap:8px;}
+  .tl-filter{
+    font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:var(--ink-soft);
+    background:var(--paper);border:1px solid var(--line);border-radius:100px;
+    padding:9px 16px;cursor:pointer;transition:all .15s ease;
+  }
+  .tl-filter:hover{border-color:var(--ink);color:var(--ink);}
+  .tl-filter.active{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+  .tl-meta-row{display:flex;align-items:center;gap:14px;}
+  .tl-count{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-soft);}
+  .tl-toggle-all{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;color:var(--accent-text);
+    background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;
+  }
+  .tl-toggle-all:hover{color:var(--ink);}
+
+  .timeline{border-top:1px solid var(--line);}
+  .tl-item{
+    display:grid;grid-template-columns:180px 1fr;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);
+    transition:opacity .2s ease;
+  }
+  .tl-date{
+    font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);padding-top:3px;
+    position:relative;padding-left:20px;
+  }
+  .tl-date::before{
+    content:"";position:absolute;left:0;top:5px;width:9px;height:9px;border-radius:50%;
+    background:var(--line);box-shadow:0 0 0 3px var(--paper);transition:background .2s ease,box-shadow .2s ease;
+  }
+  .tl-item:has(.tl-toggle[aria-expanded="true"]) .tl-date::before{
+    background:var(--accent);box-shadow:0 0 0 4px rgba(255,46,154,0.16);
+  }
+  .tl-role{min-width:0;}
+  .tl-toggle{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+    width:100%;background:none;border:none;padding:0;margin:0;cursor:pointer;text-align:left;font:inherit;color:inherit;
+  }
+  .tl-toggle h4{font-size:18px;font-weight:700;}
+  .tl-toggle .co{color:var(--accent-text);font-weight:600;font-size:14px;margin-top:2px;}
+  .tl-chevron{
+    flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;color:var(--ink-soft);
+    transition:transform .25s ease,background .2s ease,color .2s ease,border-color .2s ease;margin-top:2px;
+  }
+  .tl-toggle:hover .tl-chevron{border-color:var(--ink);color:var(--ink);}
+  .tl-toggle[aria-expanded="true"] .tl-chevron{
+    transform:rotate(135deg);background:var(--ink);color:var(--paper);border-color:var(--ink);
+  }
+  .tl-details-wrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}
+  .tl-details-wrap.open{grid-template-rows:1fr;}
+  .tl-details-inner{overflow:hidden;}
+  .tl-details{margin:14px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
+  .tl-details li{margin-bottom:5px;}
+  .tl-early{color:var(--ink-soft);font-size:14.5px;}
+
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:8px;}
+  .edu-grid h4{font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-text);margin-bottom:14px;}
+  .edu-grid ul{margin:0;padding-left:18px;font-size:14.5px;color:var(--ink-soft);}
+  .edu-grid li{margin-bottom:10px;}
+  .edu-grid li b{color:var(--ink);}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{
+    background:
+      radial-gradient(ellipse 120% 60% at 50% -10%,rgba(0,229,255,0.28) 0%,transparent 60%),
+      linear-gradient(180deg,#1c0a38 0%,#0f0620 100%);
+    color:var(--cream-on-dark);border-radius:24px;margin:0 32px 32px;
+    padding:80px 48px;text-align:center;position:relative;overflow:hidden;
+  }
+  footer::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--accent),var(--accent3),var(--accent2));
+  }
+  footer h2{color:#fff;font-size:clamp(30px,5vw,54px);max-width:760px;margin:0 auto 22px;}
+  footer p.sub{color:#B9B7AE;max-width:480px;margin:0 auto 36px;font-size:16px;}
+  .footer-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;}
+  .footer-cta .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .footer-cta .btn-primary:hover{background:#fff;color:var(--dark);border-color:#fff;}
+  .footer-cta .btn-ghost{border-color:#3a3a42;color:#fff;}
+  .footer-cta .btn-ghost:hover{background:#fff;color:var(--dark);border-color:#fff;}
+  .footer-bottom{
+    border-top:1px solid var(--dark-line);padding-top:28px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:12.5px;color:#8a8a90;font-family:'JetBrains Mono',monospace;
+  }
+  .footer-bottom .credit{display:flex;align-items:center;gap:6px;}
+  .footer-bottom .credit .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;}
+
+  /* ---------- REVEAL ANIM ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:1040px) and (min-width:901px){
+    nav.links{gap:16px;}
+    nav.links a{font-size:13px;}
+    .nav-cta{padding:9px 14px;}
+  }
+  @media (max-width:900px){
+    nav.links{display:none;}
+    .burger{display:block;}
+    .stats-inner{grid-template-columns:repeat(2,1fr);}
+    .stat:nth-child(3){border-left:none;}
+    .pillars{grid-template-columns:1fr;}
+    .case{grid-template-columns:1fr;gap:28px;}
+    .case-meta{position:static;}
+    .claude-grid{grid-template-columns:1fr;}
+    .claude-sec,footer{margin:0 16px;padding:48px 24px;border-radius:18px;}
+    .skills-grid{grid-template-columns:1fr;gap:36px;}
+    .tl-item{grid-template-columns:1fr;gap:8px;}
+    .tl-controls{flex-direction:column;align-items:flex-start;}
+    .edu-grid{grid-template-columns:1fr;gap:28px;}
+    .hyp-grid{grid-template-columns:1fr;}
+    .wrap{padding:0 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="dot"></span>Valentina Chinnici</a>
+    <nav class="links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#claude">How I Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" onclick="const l=document.querySelector('.links');const open=l.classList.toggle('mobile-open');this.setAttribute('aria-expanded',open);this.classList.toggle('is-open',open);">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">AI Product Manager · B2B SaaS · Agentic AI</div>
+      <h1>I turn customer conversations into <span class="accent">roadmaps that ship.</span></h1>
+      <p class="lede">8+ years building AI-powered and no-code B2B SaaS products across MarTech and EdTech — from a $500K Google partnership to the evidence-backed research now shaping an enterprise AI roadmap.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View case studies ↓</a>
+        <a href="mailto:valentina.chinnici@gmail.com" class="btn btn-ghost">valentina.chinnici@gmail.com</a>
+        <a href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="pulse"></span> Currently AI PM @ BEE (Beefree)</span>
+        <span>📍 Turin, Italy</span>
+        <span>Open to relocation & remote</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat"><div class="num">8+</div><div class="label">Years in Product & GTM</div></div>
+      <div class="stat"><div class="num">1M+</div><div class="label">Downloads shipped (Arduino Science Journal)</div></div>
+      <div class="stat"><div class="num">$500K</div><div class="label">Partnership secured with Google</div></div>
+      <div class="stat"><div class="num">30%</div><div class="label">Efficiency lift from AI feature roadmap</div></div>
+    </div>
+  </div>
+
+  <!-- WHAT I DO -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>What I actually do</h2>
+        <p>Less deck, more delivery. Three things I get hired to do, over and over.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal">
+          <span class="idx">01</span>
+          <h3>AI Product Strategy</h3>
+          <p>Contribute to AI product vision and roadmap, and define the evaluation criteria that decide what actually ships — balancing performance, usability and ethics, not just "can we ship it."</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="idx">02</span>
+          <h3>Customer Discovery & Research</h3>
+          <p>Run structured discovery — Jobs-to-be-Done, forces analysis — with enterprise partners to turn scattered qualitative signal into confident, prioritized roadmap bets.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="idx">03</span>
+          <h3>Automation & No-Code Delivery</h3>
+          <p>Build and ship automation workflows with n8n, Lovable and Claude that compress the gap between "idea" and "working prototype" from sprints to hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY 01 — MCP JTBD -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Case studies</h2>
+        <p>Three problems, three different shapes — research, 0→1 hardware/software, and AI feature delivery on a live SaaS platform.</p>
+      </div>
+
+      <div class="case reveal">
+        <div class="case-meta">
+          <span class="case-tag">Case Study 01 — AI Strategy & Research</span>
+          <dl>
+            <dt>Role</dt><dd>AI Product Manager, lead researcher</dd>
+            <dt>Company</dt><dd>BEE (Beefree)</dd>
+            <dt>Partners interviewed</dt><dd>4 enterprise & growth-stage partners (anonymized)</dd>
+            <dt>Method</dt><dd>Jobs-to-be-Done, forces-based analysis</dd>
+          </dl>
+          <div class="case-badges">
+            <div class="badge"><span class="num">3</span><span class="txt">core jobs identified</span></div>
+            <div class="badge"><span class="num">6</span><span class="txt">opportunity hypotheses shipped to roadmap</span></div>
+            <div class="badge"><span class="num">#1</span><span class="txt">"headless MCP" surfaced as top enterprise blocker</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3 class="title">Turning four discovery calls into an agentic AI roadmap</h3>
+          <p class="hook">When Beefree's MCP server hit beta, feedback was scattered across sales calls, support tickets and Slack threads. I built a repeatable framework to find the signal underneath the noise.</p>
+
+          <div class="case-block">
+            <h4>Context</h4>
+            <p>Beefree's MCP server marked a strategic shift — from a standalone content editor to a foundational "agent-based" ecosystem. Partners weren't asking for an editor anymore; they were building multi-agent systems where Beefree needed to act as the "hand" for an external "brain." The problem: nobody had synthesized what that actually required.</p>
+          </div>
+          <div class="case-block">
+            <h4>Approach</h4>
+            <p>I ran structured discovery calls with four enterprise partners building production multi-agent systems, then applied a Jobs-to-be-Done forces framework — push, pull, anxiety, habit — to separate one-off feature requests from the underlying jobs customers were actually hiring the MCP to do. That surfaced three core jobs: <b>High-Volume Campaign Generation</b>, <b>Brand-Compliant Personalization</b>, and <b>Developer Experience</b>.</p>
+          </div>
+          <div class="case-block">
+            <h4>What the evidence said</h4>
+            <blockquote>"Headless MCP is something that we would value a lot... many use cases require producing content offline."<cite>— Implementation lead, enterprise partner</cite></blockquote>
+            <blockquote>"We need to severely restrict the creativity of this agent. It's not allowed to change the structure."<cite>— Compliance lead, regulated-industry partner</cite></blockquote>
+            <blockquote>"I'm not a coder... I've pretty much got an enterprise-level production-ready software that I've vibe coded."<cite>— Non-technical founder, SMB partner</cite></blockquote>
+          </div>
+          <div class="case-block">
+            <h4>Outcome</h4>
+            <p>I synthesized the findings into six validated opportunity hypotheses, ready for roadmap review:</p>
+            <div class="hyp-grid">
+              <div class="hyp"><b>Headless Capability</b>Unlock high-volume production without an open editor session</div>
+              <div class="hyp"><b>Deterministic Guardrails</b>API-level locking so agents can't touch legal/brand elements</div>
+              <div class="hyp"><b>AI-Ready Documentation</b>Docs structured for LLM ingestion, not just humans</div>
+              <div class="hyp"><b>Native Tool Grouping</b>Selective tool exposure for large agentic systems</div>
+              <div class="hyp"><b>Server-Side Template Analysis</b>Batch ingestion for legacy template libraries</div>
+              <div class="hyp"><b>Model/Provider Configurability</b>First-class support for EU hosting & model choice</div>
+            </div>
+            <p style="margin-top:14px;">The biggest reframe: "headless architecture" moved from a backlog nice-to-have to the single highest-priority blocker to enterprise adoption — now driving the next roadmap cycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY 02 — Arduino x Google -->
+      <div class="case reveal">
+        <div class="case-meta">
+          <span class="case-tag">Case Study 02 — 0→1, Hardware + Software</span>
+          <dl>
+            <dt>Role</dt><dd>Product Manager</dd>
+            <dt>Company</dt><dd>Arduino</dd>
+            <dt>Team</dt><dd>5 — engineering, UX, hardware</dd>
+            <dt>Partner</dt><dd>Google (Science Journal)</dd>
+          </dl>
+          <div class="case-badges">
+            <div class="badge"><span class="num">1M+</span><span class="txt">downloads since 2020 launch</span></div>
+            <div class="badge"><span class="num">+30%</span><span class="txt">users from new middle-school segment</span></div>
+            <div class="badge"><span class="num">$500K</span><span class="txt">funding secured for long-term roadmap</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3 class="title">Opening a new market with a $500K Google partnership</h3>
+          <p class="hook">Middle schools couldn't afford a physics lab. I shipped one — custom hardware, firmware, and a Google-integrated app — that reached 1M+ downloads.</p>
+
+          <div class="case-block">
+            <h4>Context</h4>
+            <p>Arduino Science Journal was already gaining traction in high schools and universities as an affordable alternative to expensive lab equipment. Researching how educators were using it in the classroom — including a workshop led by a physics professor at La Sapienza University in Rome — pointed to an underserved opportunity: middle school, a segment Arduino didn't serve yet.</p>
+          </div>
+          <div class="case-block">
+            <h4>Challenge</h4>
+            <p>Opening a new segment meant real constraints, not hypothetical ones: mapping content to the NGSS and UK National Science Curriculum, meeting health & safety compliance for physical kits, and building for COPPA/GDPR compliance since the end users were minors.</p>
+          </div>
+          <div class="case-block">
+            <h4>Approach</h4>
+            <p>I ran a Kanban/Waterfall process for hardware development — where lead times and physical constraints demand a different cadence — alongside an Agile process for content, design and Android software, so firmware could keep iterating on what we learned from content testing. I led the partnership negotiation with Google to integrate a custom Arduino MKR WiFi 1010 board over BLE directly into the official Google Science Journal app, coordinating engineering teams across both companies against an announced launch deadline.</p>
+          </div>
+          <div class="case-block">
+            <h4>Outcome</h4>
+            <p>Shipped a fully custom hardware kit, firmware, and CMS (content available in 6 languages) integrated into Google's app on the Play Store — showcased live at NSTA19 in St. Louis alongside Google's booth. The partnership also secured $500K to fund the long-term product roadmap, and the new middle-school segment grew total users by 30%.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY 03 — AI feature delivery at BEE -->
+      <div class="case reveal">
+        <div class="case-meta">
+          <span class="case-tag">Case Study 03 — AI Feature Delivery & Automation</span>
+          <dl>
+            <dt>Role</dt><dd>AI Product Manager</dd>
+            <dt>Company</dt><dd>BEE (Beefree)</dd>
+            <dt>Since</dt><dd>Aug 2023</dd>
+            <dt>Tools</dt><dd>n8n, Lovable, Claude</dd>
+          </dl>
+          <div class="case-badges">
+            <div class="badge"><span class="num">+30%</span><span class="txt">platform efficiency & user satisfaction</span></div>
+            <div class="badge"><span class="num">n8n + Lovable</span><span class="txt">automation workflows still in use today</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3 class="title">Shipping AI features on a no-code B2B SaaS platform</h3>
+          <p class="hook">Since 2023, I've worked on the AI features shipped on Beefree's email, landing page and pop-up builder — from early roadmap input to the automation workflows that still power experimentation today.</p>
+
+          <div class="case-block">
+            <h4>Context</h4>
+            <p>Beefree is a no-code B2B SaaS platform used to build email, landing page and pop-up content. As AI capability moved from novelty to expectation, the challenge was building AI-native workflows without breaking the simplicity that makes a no-code tool work in the first place.</p>
+          </div>
+          <div class="case-block">
+            <h4>Approach</h4>
+            <ul>
+              <li>Contributed to early product vision, roadmap and success metrics for AI-powered workflows</li>
+              <li>Partnered with cross-functional teams on discovery, delivery and post-launch optimization of AI features</li>
+              <li>Built automation workflows with n8n and Lovable that are still used to accelerate experimentation</li>
+              <li>Ran competitive and market research on AI trends to keep prioritization grounded in evidence, not hype</li>
+              <li>Established evaluation criteria for AI features balancing performance, usability and ethical considerations before anything ships</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <h4>Outcome</h4>
+            <p>That work contributed to a 30% improvement in platform efficiency and user satisfaction, and the evaluation framework I built is still the one the team uses today to weigh AI features before they ship.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLAUDE CODE SECTION -->
+  <section id="claude">
+    <div class="claude-sec reveal">
+      <div class="claude-inner">
+        <div class="eyebrow" style="color:var(--accent);">How I work</div>
+        <h2>Claude is my research analyst, my automation engineer — and the tool that built this site.</h2>
+        <div class="claude-grid">
+          <div class="claude-list">
+            <div class="claude-item">
+              <span class="n">01</span>
+              <div>
+                <h4>Research synthesis</h4>
+                <p>I feed raw discovery-call transcripts into Claude to build structured Jobs-to-be-Done analyses — forces, pains, confidence levels, opportunity hypotheses — in the time it used to take to write up a single call. The MCP case study above is a real example of that output.</p>
+              </div>
+            </div>
+            <div class="claude-item">
+              <span class="n">02</span>
+              <div>
+                <h4>Automation delivery</h4>
+                <p>I pair Claude with n8n and Lovable to go from "what if we automated this" to a working prototype in an afternoon, instead of waiting on a sprint slot.</p>
+              </div>
+            </div>
+            <div class="claude-item">
+              <span class="n">03</span>
+              <div>
+                <h4>This site</h4>
+                <p>Built end-to-end in collaboration with Claude — content, design system and code — as a working example of how I actually build, not just a line on a résumé.</p>
+              </div>
+            </div>
+          </div>
+          <div class="terminal">
+            <div class="term-bar"><span></span><span></span><span></span></div>
+            <div class="term-body">
+              <div>$ claude synthesize --calls discovery_q3</div>
+              <div class="c">→ reading 4 anonymized discovery-call transcripts...</div>
+              <div class="g">→ 3 core jobs identified</div>
+              <div class="g">→ push / pull / anxiety / habit forces mapped</div>
+              <div class="o">→ 6 opportunity hypotheses ready for roadmap review</div>
+              <div style="margin-top:14px;">$ claude build --project portfolio</div>
+              <div class="c">→ drafting content from CV + case studies...</div>
+              <div class="g">→ design system: clean, bold, minimal</div>
+              <div class="o">→ shipped.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Skills & tools</h2>
+        <p>What I reach for day to day.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-col reveal">
+          <h3>Product Management</h3>
+          <div class="tags">
+            <span class="tag">Product strategy</span>
+            <span class="tag">Product discovery</span>
+            <span class="tag">Roadmapping</span>
+            <span class="tag">Backlog ownership</span>
+            <span class="tag">ShapeUp</span>
+            <span class="tag">Agile</span>
+            <span class="tag">Scrum</span>
+            <span class="tag">Kanban</span>
+            <span class="tag">OKRs</span>
+            <span class="tag">Stakeholder management</span>
+            <span class="tag">Go-to-market</span>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h3>AI & Automation</h3>
+          <div class="tags">
+            <span class="tag">AI product development</span>
+            <span class="tag">Prompt design</span>
+            <span class="tag">Model evaluation</span>
+            <span class="tag">Ethical AI</span>
+            <span class="tag">Automation workflows</span>
+            <span class="tag">No-code platforms</span>
+            <span class="tag">n8n</span>
+            <span class="tag">Lovable</span>
+            <span class="tag">Claude</span>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h3>Data & Tools</h3>
+          <div class="tags">
+            <span class="tag">Data-informed decisions</span>
+            <span class="tag">A/B testing</span>
+            <span class="tag">Metrics definition</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Confluence</span>
+            <span class="tag">Miro</span>
+            <span class="tag">Mural</span>
+            <span class="tag">Airtable</span>
+            <span class="tag">Microsoft BI</span>
+            <span class="tag">Google Workspace</span>
+            <span class="tag">Slack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Experience</h2>
+        <p>8+ years across MarTech and EdTech, B2B SaaS and 0→1 hardware.</p>
+      </div>
+      <div class="tl-controls reveal">
+        <div class="tl-filters" role="group" aria-label="Filter experience by company">
+          <button type="button" class="tl-filter active" data-filter="all" aria-pressed="true">All roles</button>
+          <button type="button" class="tl-filter" data-filter="bee" aria-pressed="false">BEE (Beefree)</button>
+          <button type="button" class="tl-filter" data-filter="arduino" aria-pressed="false">Arduino</button>
+          <button type="button" class="tl-filter" data-filter="early" aria-pressed="false">Early career</button>
+        </div>
+        <div class="tl-meta-row">
+          <span class="tl-count" id="tlCount">5 roles</span>
+          <button type="button" class="tl-toggle-all" id="tlToggleAll">Expand all</button>
+        </div>
+      </div>
+
+      <div class="timeline reveal" id="timeline">
+        <div class="tl-item" data-company="bee">
+          <div class="tl-date">Aug 2023 — Present</div>
+          <div class="tl-role">
+            <button type="button" class="tl-toggle" aria-expanded="true" aria-controls="tl-details-1">
+              <div>
+                <h4>AI Product Manager, B2B SaaS</h4>
+                <div class="co">BEE Content Design Inc., Turin</div>
+              </div>
+              <span class="tl-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="tl-details-wrap open" id="tl-details-1">
+              <div class="tl-details-inner">
+                <ul class="tl-details">
+                  <li>Work on AI-driven features for a no-code B2B SaaS platform (email, landing pages, pop-ups)</li>
+                  <li>Contributed to early product vision, roadmap and success metrics — helping lift efficiency and satisfaction by 30%</li>
+                  <li>Built automation workflows using n8n and Lovable, still used to accelerate experimentation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-company="bee">
+          <div class="tl-date">Mar 2022 — Aug 2023</div>
+          <div class="tl-role">
+            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-2">
+              <div>
+                <h4>Senior Product Marketing Manager, B2B SaaS</h4>
+                <div class="co">BEE Content Design Inc., Turin</div>
+              </div>
+              <span class="tl-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="tl-details-wrap" id="tl-details-2">
+              <div class="tl-details-inner">
+                <ul class="tl-details">
+                  <li>Led go-to-market strategy for BEE Plugin in close partnership with Product</li>
+                  <li>Launched a new company website, increasing pageviews by 16%</li>
+                  <li>Conducted customer interviews and qualitative research to validate features</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-company="arduino">
+          <div class="tl-date">Aug 2018 — Mar 2022</div>
+          <div class="tl-role">
+            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-3">
+              <div>
+                <h4>Product Manager, EdTech & SaaS</h4>
+                <div class="co">Arduino, Turin</div>
+              </div>
+              <span class="tl-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="tl-details-wrap" id="tl-details-3">
+              <div class="tl-details-inner">
+                <ul class="tl-details">
+                  <li>Owned product strategy and delivery for Arduino Science Journal and related educational products</li>
+                  <li>Led partnership negotiations with Google, securing $500K in funding</li>
+                  <li>Led COPPA and GDPR compliance for products targeting underage users</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-company="arduino">
+          <div class="tl-date">Nov 2016 — Jan 2018</div>
+          <div class="tl-role">
+            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-4">
+              <div>
+                <h4>Product Marketing Manager, EdTech</h4>
+                <div class="co">Arduino, Turin</div>
+              </div>
+              <span class="tl-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="tl-details-wrap" id="tl-details-4">
+              <div class="tl-details-inner">
+                <ul class="tl-details">
+                  <li>Developed go-to-market strategy for Arduino Education Products</li>
+                  <li>Project-managed the Arduino 101 Starter Kit for Intel</li>
+                  <li>Led trade-show participation and events across the US and Europe</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-company="early">
+          <div class="tl-date">Early career</div>
+          <div class="tl-role">
+            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-5">
+              <div>
+                <h4>Learning Innovation & Maker Education</h4>
+                <div class="co">Makerini Ltd · Ravensbourne University, London</div>
+              </div>
+              <span class="tl-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="tl-details-wrap" id="tl-details-5">
+              <div class="tl-details-inner">
+                <ul class="tl-details">
+                  <li>Learning Innovation Manager & Co-Founder, Makerini Ltd (London)</li>
+                  <li>Event Coordinator & Maker Education Consultant (London)</li>
+                  <li>Support Engineer for Learning Innovation, Ravensbourne University (London)</li>
+                  <li>Designed and delivered EdTech and STEAM educational initiatives</li>
+                  <li>Managed digital learning projects and trained educators on e-learning platforms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="reveal">
+          <h4>Education</h4>
+          <ul>
+            <li><b>MPhil in Pedagogy</b> — Università degli Studi di Torino (Ongoing)</li>
+            <li><b>Product Management Program Certificate</b> — UC Berkeley, Haas School of Business</li>
+            <li><b>BS in Education</b> (110 cum laude) — Università degli Studi di Roma Tre</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h4>Certifications</h4>
+          <ul>
+            <li><b>Technical Foundations for Product Managers</b> — Maven (2024)</li>
+            <li><b>AI Micro-Certification (AIC)</b> — Product School (2024)</li>
+            <li><b>AI for Product Management</b> — Pendo (2024)</li>
+            <li><b>Product-Led Growth Certification</b> — Pendo, Product School (2022)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding-bottom:32px;">
+    <footer class="reveal">
+      <div class="eyebrow" style="justify-content:center;color:var(--accent);">Open to new roles</div>
+      <h2>Let's build something worth shipping.</h2>
+      <p class="sub">Turin, Italy · open to relocation & remote · currently AI Product Manager at BEE (Beefree).</p>
+      <div class="footer-cta">
+        <a href="mailto:valentina.chinnici@gmail.com" class="btn btn-primary">valentina.chinnici@gmail.com</a>
+        <a href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Connect on LinkedIn ↗</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Valentina Chinnici</span>
+        <span class="credit"><span class="dot"></span>Built in collaboration with Claude</span>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<script>
+  // scroll reveal — with graceful fallback so content is never stuck invisible
+  const els = document.querySelectorAll('.reveal');
+  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window) || prefersReduced){
+    els.forEach(el=>el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    },{threshold:0.12});
+    els.forEach(el=>io.observe(el));
+  }
+
+  // mobile nav
+  const style = document.createElement('style');
+  style.textContent = `.links.mobile-open{display:flex !important;position:fixed;top:64px;left:0;right:0;background:var(--paper);flex-direction:column;padding:24px 32px;border-bottom:1px solid var(--line);gap:18px;}`;
+  document.head.appendChild(style);
+
+  // reliable in-page navigation for all hash links (nav, hero CTA, logo)
+  const headerEl = document.querySelector('header.nav');
+  document.querySelectorAll('a[href^="#"]').forEach(link=>{
+    link.addEventListener('click', function(e){
+      const targetId = this.getAttribute('href');
+      if(!targetId || targetId.length < 2) return;
+      const target = document.querySelector(targetId);
+      if(!target) return;
+      e.preventDefault();
+      const headerH = headerEl ? headerEl.offsetHeight : 0;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
+      window.scrollTo({top, behavior:'smooth'});
+      // close mobile menu after navigating
+      document.querySelector('.links').classList.remove('mobile-open');
+      const burger = document.getElementById('burgerBtn');
+      if(burger){ burger.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
+    });
+  });
+
+  // ---------- Interactive experience timeline ----------
+  (function(){
+    const tlItems = Array.from(document.querySelectorAll('.tl-item'));
+    const filterBtns = Array.from(document.querySelectorAll('.tl-filter'));
+    const toggleBtns = Array.from(document.querySelectorAll('.tl-toggle'));
+    const countEl = document.getElementById('tlCount');
+    const toggleAllBtn = document.getElementById('tlToggleAll');
+    if(!tlItems.length) return;
+
+    function setDetailsOpen(toggleBtn, open){
+      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const wrap = document.getElementById(toggleBtn.getAttribute('aria-controls'));
+      if(wrap) wrap.classList.toggle('open', open);
+      const chevron = toggleBtn.querySelector('.tl-chevron');
+      if(chevron) chevron.textContent = '+';
+    }
+
+    // individual accordion toggles
+    toggleBtns.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        setDetailsOpen(btn, !isOpen);
+        syncToggleAllLabel();
+      });
+    });
+
+    function syncToggleAllLabel(){
+      const visibleToggles = toggleBtns.filter(b => b.closest('.tl-item').style.display !== 'none');
+      const allOpen = visibleToggles.length > 0 && visibleToggles.every(b => b.getAttribute('aria-expanded') === 'true');
+      toggleAllBtn.textContent = allOpen ? 'Collapse all' : 'Expand all';
+    }
+
+    // expand all / collapse all
+    toggleAllBtn.addEventListener('click', ()=>{
+      const visibleToggles = toggleBtns.filter(b => b.closest('.tl-item').style.display !== 'none');
+      const allOpen = visibleToggles.length > 0 && visibleToggles.every(b => b.getAttribute('aria-expanded') === 'true');
+      visibleToggles.forEach(b => setDetailsOpen(b, !allOpen));
+      toggleAllBtn.textContent = allOpen ? 'Expand all' : 'Collapse all';
+    });
+
+    // company filters
+    filterBtns.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        filterBtns.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed','true');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        tlItems.forEach(item=>{
+          const show = filter === 'all' || item.dataset.company === filter;
+          item.style.display = show ? '' : 'none';
+          if(show) visible++;
+        });
+        countEl.textContent = visible + (visible === 1 ? ' role' : ' roles');
+        syncToggleAllLabel();
+      });
+    });
+
+    syncToggleAllLabel();
+  })();
+</script>
+
+</body>
+</html>
