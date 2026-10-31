@@ -3,969 +3,888 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valentina Chinnici — AI Product Manager</title>
-<meta name="description" content="Valentina Chinnici — AI Product Manager, B2B SaaS. 8+ years building AI-powered products across MarTech and EdTech.">
+<title>Valentina Chinnici, AI Product Manager</title>
+<meta name="description" content="Valentina Chinnici is an AI Product Manager in B2B SaaS with 8+ years building AI-powered products across MarTech and EdTech.">
+<meta name="theme-color" content="#F5F6FB">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://api.dicebear.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#16121f;
-    --ink-soft:#5b5468;
-    --paper:#FAF8F3;
-    --paper-dim:#F3EEF9;
-    --line:#E8E1F3;
-    --accent:#FF2E9A;
-    --accent2:#00E5FF;
-    --accent3:#B14EFF;
-    --accent-ink:#FF2E9A;
-    /* readable (higher-contrast) variants for small text on light backgrounds —
-       the raw neon tones above are for dark sections, glows and large gradient text only */
-    --accent-text:#D6127A;
-    --accent2-text:#007E96;
-    --accent3-text:#8B2FD1;
-    --dark:#150826;
-    --dark-line:#3D2168;
-    --cream-on-dark:#F3EFFF;
-    --radius:14px;
-    --maxw:1180px;
+    --ink:#161A33;
+    --ink-soft:#4C5170;
+    --paper:#F5F6FB;
+    --rule:#E1E3EF;
+    --night:#0B1028;
+    --night-2:#151C42;
+    --green:#2FE0A0;
+    --green-tint:#D8F7EA;
+    --teal:#25C2D9;
+    --teal-tint:#D9F3F7;
+    --violet:#7C5CFF;
+    --violet-ink:#5B3FE0;
+    --violet-tint:#ECE7FF;
+    --magenta:#E04FC2;
+    --magenta-tint:#FBE2F4;
+    --red:#E5484D;
+    --display:'Bricolage Grotesque',system-ui,sans-serif;
+    --body:'Figtree',system-ui,sans-serif;
+    --r-lg:28px;
+    --r-sm:14px;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',system-ui,-apple-system,sans-serif;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,h4{
-    font-family:'Space Grotesk',system-ui,sans-serif;
-    line-height:1.08;
-    margin:0;
-    letter-spacing:-0.01em;
-  }
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
-  .accent{
-    background:linear-gradient(90deg,var(--accent-text),var(--accent3-text) 55%,var(--accent2-text));
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-    color:var(--accent-text);
-  }
-  .mono{font-family:'JetBrains Mono',monospace;}
+  html{scroll-padding-top:84px;-webkit-tap-highlight-color:transparent;}
+  h1,h2,h3,.job-title{text-wrap:balance;}
+  button,a{touch-action:manipulation;}
+  .skip{position:absolute;left:16px;top:-60px;z-index:20;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;}
+  .skip:focus{top:12px;}
+  .paused .band,.paused .stars .tw{animation-play-state:paused;}
+  .motion{position:absolute;right:20px;top:20px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;padding:6px 12px;font-weight:600;font-size:13px;cursor:pointer;transition:background-color .15s ease;}
+  .motion:hover{background:rgba(255,255,255,.2);}
+  @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth;}}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-0.02em;}
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  b{font-weight:700;}
+  button{font:inherit;color:inherit;}
+  :focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px;}
+  svg.lucide{width:1.15em;height:1.15em;flex-shrink:0;stroke-width:2.2;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .icon-list{list-style:none;padding:0;margin:0;}
+  .icon-list li{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px;}
+  .icon-list svg.lucide{margin-top:.2em;color:var(--violet);}
 
-  /* ---------- NAV ---------- */
-  header.nav{
-    position:sticky;top:0;z-index:100;
-    background:rgba(250,248,243,0.85);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:var(--maxw);margin:0 auto;padding:18px 32px;
-    display:flex;align-items:center;justify-content:space-between;
-  }
-  .logo{
-    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;
-    display:flex;align-items:center;gap:8px;
-  }
-  .logo .dot{width:9px;height:9px;background:var(--accent);border-radius:50%;display:inline-block;}
-  nav.links{display:flex;gap:30px;align-items:center;}
-  nav.links a{font-size:14px;font-weight:600;color:var(--ink-soft);transition:color .15s;}
-  nav.links a:hover{color:var(--ink);}
-  .nav-cta{
-    background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:100px;
-    font-size:13px;font-weight:700;white-space:nowrap;
-  }
-  .nav-cta:hover{background:var(--accent);}
-  .burger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
-  .burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:transform .2s ease,opacity .2s ease;}
-  .burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .burger.is-open span:nth-child(2){opacity:0;}
-  .burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  /* nav */
+  .nav{position:sticky;top:0;z-index:10;background:rgba(251,250,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;}
+  .logo{font-family:var(--display);font-weight:800;font-size:19px;text-decoration:none;}
+  .nav nav{display:flex;align-items:center;gap:22px;font-weight:600;font-size:15px;}
+  .nav nav a{text-decoration:none;color:var(--ink-soft);}
+  .nav nav a:hover{color:var(--ink);}
+  .score{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;background:var(--violet-tint);padding:6px 12px;border-radius:999px;font-variant-numeric:tabular-nums;transition:background-color .2s ease;}
+  .score.bump{background:var(--green);}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-weight:700;font-size:16px;text-decoration:none;padding:13px 20px;border-radius:999px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;transition:transform .15s ease-out,background-color .15s ease,color .15s ease;}
+  .btn:hover{transform:translateY(-2px);background:var(--magenta);border-color:var(--magenta);color:var(--ink);}
+  .btn:active{transform:translateY(0);}
+  .btn.ghost{background:transparent;color:var(--ink);}
+  .btn.ghost:hover{background:var(--green);border-color:var(--ink);}
+  .nav nav a.btn{padding:8px 15px;font-size:14px;color:var(--paper);}
+  .nav nav a.btn:hover{color:var(--ink);}
 
-  /* ---------- HERO ---------- */
-  .hero{padding:96px 0 64px;position:relative;overflow:hidden;}
-  .hero::before{
-    content:"";position:absolute;top:-220px;right:-160px;width:520px;height:520px;
-    background:radial-gradient(circle,rgba(255,46,154,0.28),transparent 70%);
-    filter:blur(6px);pointer-events:none;z-index:-1;
-  }
-  .hero::after{
-    content:"";position:absolute;top:-120px;left:-200px;width:440px;height:440px;
-    background:radial-gradient(circle,rgba(0,229,255,0.22),transparent 70%);
-    filter:blur(6px);pointer-events:none;z-index:-1;
-  }
-  .eyebrow{
-    font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;
-    text-transform:uppercase;letter-spacing:0.14em;color:var(--accent-text);
-    display:flex;align-items:center;gap:10px;margin-bottom:22px;
-  }
-  .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent);}
-  .hero h1{font-size:clamp(38px,6vw,74px);font-weight:700;max-width:920px;}
-  .hero p.lede{
-    font-size:clamp(17px,1.9vw,20px);color:var(--ink-soft);max-width:640px;margin:26px 0 36px;
-  }
-  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:34px;}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:14px 24px;border-radius:100px;font-weight:700;font-size:14.5px;
-    border:1.5px solid var(--ink);transition:all .18s ease;
-  }
-  .btn-primary{background:var(--ink);color:var(--paper);}
-  .btn-primary:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(255,46,154,0.55);}
-  .btn-ghost{background:transparent;color:var(--ink);}
-  .btn-ghost:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(177,78,255,0.35);}
-  .hero-meta{
-    display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-soft);
-    font-family:'JetBrains Mono',monospace;
-  }
-  .hero-meta span{display:flex;align-items:center;gap:7px;}
-  .pulse{width:8px;height:8px;background:#2ecc71;border-radius:50%;display:inline-block;animation:pulse 2s infinite;}
-  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+  /* hero: night sky */
+  .hero{padding:24px 0 0;}
+  .sky{position:relative;isolation:isolate;overflow:hidden;background:var(--night);color:var(--paper);border-radius:var(--r-lg);padding:56px 48px 120px;}
+  .aurora{position:absolute;inset:0;z-index:-3;--energy:0;opacity:calc(.5 + var(--energy) * .3);transform:scaleY(calc(1 + var(--energy) * .3));transform-origin:50% 0;}
+  .band{position:absolute;display:block;border-radius:50%;filter:blur(56px);will-change:transform;}
+  .b1{width:70%;height:34%;left:-12%;top:-8%;background:var(--green);animation:drift-a 18s ease-in-out infinite alternate;}
+  .b2{width:55%;height:30%;right:-12%;top:-4%;background:var(--violet);animation:drift-b 22s ease-in-out infinite alternate;}
+  .b3{width:40%;height:22%;left:42%;top:14%;background:var(--teal);opacity:.8;animation:drift-a 15s ease-in-out infinite alternate-reverse;}
+  .b4{width:34%;height:20%;right:-4%;top:26%;background:var(--magenta);opacity:.6;animation:drift-b 26s ease-in-out infinite alternate-reverse;}
+  @keyframes drift-a{from{transform:translate(0,0) rotate(-10deg);}to{transform:translate(9%,8%) rotate(-3deg) scaleY(1.25);}}
+  @keyframes drift-b{from{transform:translate(0,0) rotate(8deg);}to{transform:translate(-10%,10%) rotate(2deg) scaleY(1.3);}}
+  .stars{position:absolute;inset:0;width:100%;height:100%;z-index:-2;}
+  .stars circle{fill:#fff;}
+  .stars .tw{animation:twinkle 3s ease-in-out infinite alternate;}
+  .stars .tw:nth-child(odd){animation-duration:4.5s;}
+  @keyframes twinkle{from{opacity:.25;}to{opacity:1;}}
+  .peaks{position:absolute;left:0;right:0;bottom:0;width:100%;height:150px;z-index:-1;}
+  .sky .status{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px;margin-bottom:24px;}
+  .hero h1{font-size:clamp(40px,6.4vw,80px);font-weight:800;max-width:15ch;color:#fff;}
+  .hero .lede{font-size:clamp(18px,1.8vw,21px);color:#CDD2EC;max-width:32em;margin:24px 0 28px;}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;}
+  .sky .btn{background:var(--green);border-color:var(--green);color:var(--ink);}
+  .sky .btn:hover{background:#fff;border-color:#fff;}
+  .sky .btn.ghost{background:transparent;border-color:rgba(255,255,255,.55);color:#fff;}
+  .sky .btn.ghost:hover{background:#fff;border-color:#fff;color:var(--ink);}
 
-  /* ---------- STATS STRIP ---------- */
-  .stats{
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    background:var(--paper-dim);
-  }
-  .stats-inner{
-    max-width:var(--maxw);margin:0 auto;padding:0 32px;
-    display:grid;grid-template-columns:repeat(4,1fr);
-  }
-  .stat{padding:34px 24px;border-left:1px solid var(--line);}
-  .stat:first-child{border-left:none;}
-  .stat .num{
-    font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,3.2vw,40px);font-weight:700;
-    background:linear-gradient(90deg,var(--accent),var(--accent3));
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--accent);
-  }
-  .stat .label{font-size:12.5px;color:var(--ink-soft);margin-top:6px;font-weight:600;}
+  /* games: shared */
+  .game-tag{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px;background:var(--ink);color:var(--paper);margin-bottom:14px;}
+  .game-tag.won{background:#1FA56B;}
+  .how-to{font-weight:600;margin-bottom:16px;}
+  .fb{min-height:1.5em;font-weight:600;font-size:15px;margin:10px 0 0;}
+  .fb.bad{color:var(--red);}
+  .fb.good{color:#127A4E;}
+  .shake{animation:shake .3s ease-out;}
+  @keyframes shake{25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
+  .prize{display:none;margin-top:20px;padding:20px 22px;border-radius:var(--r-sm);background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);}
+  .prize.on{display:block;animation:pop .35s cubic-bezier(.2,.9,.3,1.3);}
+  @keyframes pop{from{transform:scale(.94);opacity:0;}to{transform:none;opacity:1;}}
+  .prize h4{font-size:20px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .prize p:last-child,.prize ul:last-child{margin-bottom:0;}
 
-  /* ---------- SECTION HEADERS ---------- */
-  section{padding:96px 0;}
-  .sec-head{max-width:680px;margin-bottom:56px;}
-  .sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:700;}
-  .sec-head p{color:var(--ink-soft);font-size:16.5px;margin-top:14px;}
+  /* game 1: sensor */
+  .sensor{margin-top:48px;background:rgba(11,16,40,.6);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);color:#fff;border-radius:20px;padding:22px 26px 18px;}
+  .sensor .game-tag{background:var(--green);color:var(--ink);}
+  .sensor-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;}
+  .sensor-head p{margin:0;font-weight:600;font-size:16px;max-width:30em;}
+  .reading{font-family:var(--display);font-weight:800;font-size:clamp(28px,4vw,44px);font-variant-numeric:tabular-nums;line-height:1;}
+  .reading small{font-size:.45em;font-weight:600;opacity:.85;margin-left:4px;}
+  .meter{height:10px;border-radius:999px;background:rgba(255,255,255,.16);margin-top:16px;overflow:hidden;}
+  .meter i{display:block;height:100%;width:0;background:var(--green);border-radius:999px;}
+  .sensor svg.trace{display:block;width:100%;height:120px;margin-top:10px;}
+  .sensor .grid line{stroke:rgba(255,255,255,.12);stroke-width:1;}
+  .sensor polyline{fill:none;stroke:var(--green);stroke-width:3;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;}
+  .sensor-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:14px;color:#CDD2EC;}
+  .linkbtn{background:none;border:none;color:#fff;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-weight:600;font-size:14px;padding:4px;}
 
-  /* ---------- PILLARS ---------- */
-  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .pillar{
-    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
-    padding:32px 28px;transition:transform .2s,border-color .2s;
-  }
-  .pillar:hover{transform:translateY(-4px);border-color:var(--ink);}
-  .pillar .idx{font-family:'JetBrains Mono',monospace;color:var(--accent-text);font-weight:600;font-size:13px;}
-  .pillar h3{font-size:20px;margin:14px 0 10px;}
-  .pillar p{color:var(--ink-soft);font-size:14.5px;margin:0;}
+  .stickers{display:flex;flex-wrap:wrap;gap:18px;margin-top:-34px;padding:0 20px;position:relative;z-index:1;}
+  .sticker{min-width:170px;background:#fff;border:2px solid var(--ink);border-radius:var(--r-sm);padding:12px 18px;box-shadow:4px 4px 0 var(--ink);transform:rotate(var(--tilt,-3deg));transition:transform .3s ease-out,background-color .3s ease;}
+  .sticker:nth-child(2){--tilt:2deg;}
+  .sticker:nth-child(3){--tilt:-1.5deg;}
+  .sticker:nth-child(4){--tilt:3deg;}
+  .sticker b{display:block;font-family:var(--display);font-size:30px;font-weight:800;line-height:1.05;}
+  .sticker span{font-size:14px;font-weight:600;}
+  .sticker .lock{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink-soft);height:100%;}
+  .sticker .val{display:none;}
+  .stickers.open .sticker .lock{display:none;}
+  .stickers.open .sticker .val{display:block;}
+  .stickers.open .sticker{background:var(--green);}
+  .stickers.open .sticker:nth-child(2){background:var(--magenta);}
+  .stickers.open .sticker:nth-child(3){background:var(--teal);}
+  .stickers.open .sticker:nth-child(4){background:var(--violet-tint);}
+  .stickers.open .sticker:hover{transform:rotate(0) scale(1.04);}
 
-  /* ---------- CASE STUDIES ---------- */
-  .case{
-    border-top:1px solid var(--line);
-    padding:72px 0;
-    display:grid;grid-template-columns:280px 1fr;gap:56px;
-  }
-  .case:last-child{padding-bottom:0;}
-  .case-meta{position:sticky;top:100px;align-self:start;}
-  .case-tag{
-    font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;
-    color:var(--accent-text);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;
-    display:block;
-  }
-  .case-meta dl{margin:22px 0 0;font-size:13px;}
-  .case-meta dt{color:var(--ink-soft);font-weight:600;margin-top:14px;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;}
-  .case-meta dd{margin:4px 0 0;font-weight:600;}
-  .case-badges{display:flex;flex-direction:column;gap:10px;margin-top:24px;}
-  .badge{
-    background:var(--paper-dim);border:1px solid var(--line);border-radius:10px;
-    padding:12px 14px;
-  }
-  .badge .num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;display:block;color:var(--accent2-text);}
-  .badge .txt{font-size:12px;color:var(--ink-soft);}
+  /* sections */
+  section{padding:96px 0 0;}
+  .sec-title{font-size:clamp(34px,4.6vw,56px);font-weight:800;margin-bottom:10px;}
+  .sec-sub{font-size:19px;color:var(--ink-soft);max-width:32em;margin-bottom:36px;}
 
-  .case-body h3.title{font-size:clamp(24px,3vw,32px);margin-bottom:14px;max-width:560px;}
-  .case-body .hook{font-size:17px;color:var(--ink-soft);max-width:600px;margin-bottom:34px;}
-  .case-block{margin-bottom:26px;}
-  .case-block h4{
-    font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;
-    letter-spacing:.08em;color:var(--ink);margin-bottom:8px;font-weight:600;
-  }
-  .case-block p{font-size:15.5px;color:var(--ink-soft);margin:0;max-width:640px;}
-  .case-block ul{margin:8px 0 0;padding-left:18px;color:var(--ink-soft);font-size:15.5px;}
-  .case-block li{margin-bottom:6px;}
-  blockquote{
-    border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:22px 0;
-    font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:500;
-    max-width:600px;color:var(--ink);
-  }
-  blockquote cite{
-    display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:13px;
-    color:var(--ink-soft);margin-top:8px;font-weight:600;
-  }
-  .hyp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;}
-  .hyp{
-    background:var(--paper-dim);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13.5px;
-  }
-  .hyp b{display:block;font-size:13.5px;margin-bottom:3px;color:var(--accent3-text);}
+  /* case studies */
+  .case{border-radius:var(--r-lg);padding:44px 48px;margin-bottom:24px;}
+  .case.magenta{background:var(--magenta-tint);}
+  .case.green{background:var(--green-tint);}
+  .case.teal{background:var(--teal-tint);}
+  .case-top{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:40px;margin-bottom:28px;}
+  .case h3{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-bottom:12px;max-width:18ch;}
+  .case .lead{font-size:19px;color:var(--ink-soft);max-width:32em;margin:0;}
+  .facts{font-size:15px;}
+  .facts li{margin-bottom:6px;}
+  .facts svg.lucide{color:var(--ink);}
+  .side{display:flex;flex-direction:column;gap:18px;}
+  .spot{width:100%;max-width:260px;height:auto;}
+  .spot .s{stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;}
+  .spot .ln{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;}
+  .f-m{fill:var(--magenta);} .f-t{fill:var(--teal);} .f-g{fill:var(--green);} .f-v{fill:var(--violet);} .f-w{fill:#fff;} .f-i{fill:var(--ink);}
+  .launchpad .rocket,.launchpad .flame{transform-box:fill-box;transition:transform .9s cubic-bezier(.3,0,.2,1);}
+  .launchpad .flame{transform-origin:50% 0;transform:scaleY(.5);}
+  .launched .launchpad .rocket{transform:translateY(-12px);}
+  .launched .launchpad .flame{transform:scaleY(1);animation:flicker .18s ease-in-out infinite alternate .9s;}
+  @keyframes flicker{to{transform:scaleY(.82);}}
+  .lab .pendulum{transform-box:view-box;transform-origin:64px 22px;transform:rotate(12deg);}
+  .lab .graph{stroke-dasharray:100;stroke-dashoffset:62;transition:stroke-dashoffset 1.6s ease-out;}
+  .swinging .lab .pendulum{animation:swing 1.4s ease-in-out infinite alternate;}
+  .swinging .lab .graph{stroke-dashoffset:0;}
+  .swinging .lab .waves{animation:pulse 1.4s ease-in-out infinite alternate;}
+  @keyframes swing{from{transform:rotate(14deg);}to{transform:rotate(-14deg);}}
+  @keyframes pulse{from{opacity:.35;}to{opacity:1;}}
+  .sort .n{transform-box:fill-box;transform-origin:center;transition:transform .7s cubic-bezier(.5,0,.3,1),opacity .6s ease-in;}
+  .sort .n:nth-of-type(2){transition-delay:.06s;} .sort .n:nth-of-type(3){transition-delay:.12s;}
+  .sort .n:nth-of-type(4){transition-delay:.18s;} .sort .n:nth-of-type(5){transition-delay:.24s;} 
+  .sorted .sort .n{transform:translate(var(--dx),var(--dy)) scale(.3);opacity:0;}
+  .sort .fill{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(.25);transition:transform .8s ease-out .7s;}
+  .sorted .sort .fill{transform:scaleY(1);}
+  .sort .ic{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .sort .ok{transform-box:fill-box;transform-origin:center;transform:scale(0);opacity:0;transition:transform .35s cubic-bezier(.2,.9,.3,1.4) 1.3s,opacity .2s ease 1.3s;}
+  .sorted .sort .ok{transform:scale(1);opacity:1;}
+  details.story{margin-top:22px;}
+  details.story summary{cursor:pointer;font-weight:700;display:inline-flex;align-items:center;gap:6px;list-style:none;}
+  details.story summary::-webkit-details-marker{display:none;}
+  details.story summary svg{transition:transform .2s ease-out;}
+  details.story[open] summary svg{transform:rotate(180deg);}
+  details.story p{max-width:38em;margin:12px 0 0;}
 
-  /* ---------- CLAUDE CODE (dark) ---------- */
-  .claude-sec{
-    background:
-      radial-gradient(ellipse 120% 60% at 50% -10%,rgba(177,78,255,0.35) 0%,transparent 60%),
-      linear-gradient(180deg,#1c0a38 0%,#0f0620 100%);
-    color:var(--cream-on-dark);border-radius:24px;margin:0 32px;padding:72px 48px;
-    position:relative;overflow:hidden;
-  }
-  .claude-sec::before{
-    content:"";position:absolute;top:0;left:0;right:0;height:3px;
-    background:linear-gradient(90deg,var(--accent2),var(--accent),var(--accent3));
-  }
-  .claude-inner{max-width:calc(var(--maxw) - 64px);margin:0 auto;}
-  .claude-sec .eyebrow{color:var(--accent);}
-  .claude-sec h2{font-size:clamp(26px,3.6vw,40px);max-width:820px;font-weight:700;color:#fff;}
-  .claude-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;align-items:start;}
-  .claude-list{display:flex;flex-direction:column;gap:26px;}
-  .claude-item{display:flex;gap:16px;}
-  .claude-item .n{
-    font-family:'JetBrains Mono',monospace;color:var(--accent);font-weight:700;font-size:14px;flex-shrink:0;
-  }
-  .claude-item h4{color:#fff;font-size:16px;margin-bottom:6px;font-family:'Space Grotesk',sans-serif;}
-  .claude-item p{color:#B9B7AE;font-size:14.5px;margin:0;}
-  .terminal{
-    background:#17171B;border:1px solid var(--dark-line);border-radius:12px;overflow:hidden;
-  }
-  .term-bar{padding:12px 16px;border-bottom:1px solid var(--dark-line);display:flex;gap:7px;}
-  .term-bar span{width:10px;height:10px;border-radius:50%;background:#3a3a42;}
-  .term-body{padding:22px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.9;color:#C9C7BE;}
-  .term-body .g{color:#00FFA3;}
-  .term-body .o{color:var(--accent2);}
-  .term-body .c{color:#8a80a0;}
+  /* game 2: quotes */
+  .quotes{display:grid;gap:16px;}
+  .q{background:#fff;border-radius:var(--r-sm);padding:20px 22px;display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;border:2px solid transparent;transition:border-color .2s ease;}
+  .q.right{border-color:#1FA56B;}
+  .q img{width:64px;height:64px;border-radius:50%;background:var(--violet-tint);}
+  blockquote{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(19px,2vw,23px);line-height:1.3;letter-spacing:-0.01em;}
+  blockquote mark{color:var(--ink);background:linear-gradient(var(--green),var(--green)) no-repeat 0 85%/0% 70%;padding:0 3px;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .8s cubic-bezier(.2,.7,.2,1);}
+  .q.right blockquote mark{background-size:100% 70%;}
+  .q cite{display:block;font-style:normal;font-weight:600;font-size:14px;color:var(--ink-soft);margin:6px 0 12px;}
+  .opts{display:flex;flex-wrap:wrap;gap:8px;}
+  .opt{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:15px;padding:8px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--paper);cursor:pointer;transition:background-color .15s ease;}
+  .opt:hover:not(:disabled){background:var(--green);}
+  .opt:disabled{cursor:default;opacity:.45;}
+  .opt.is-right{background:var(--teal);opacity:1;}
+  .opt.is-wrong{background:#FFD5D7;}
 
-  /* ---------- SKILLS ---------- */
-  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
-  .skill-col h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;color:var(--accent-text);margin-bottom:18px;}
-  .skill-col:nth-child(2) h3{color:var(--accent3-text);}
-  .skill-col:nth-child(3) h3{color:var(--accent2-text);}
-  .tags{display:flex;flex-wrap:wrap;gap:9px;}
-  .tag{
-    border:1px solid var(--line);padding:8px 14px;border-radius:100px;font-size:13px;font-weight:600;
-    background:var(--paper);
-  }
+  /* game 3: kit */
+  .parts{display:flex;flex-wrap:wrap;gap:12px;}
+  .part{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;padding:14px 18px;border-radius:var(--r-sm);border:2px solid var(--ink);background:#fff;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .15s ease-out,background-color .15s ease;}
+  .part:hover:not(:disabled){transform:translate(-1px,-1px);background:var(--violet-tint);}
+  .part:disabled{opacity:.3;cursor:default;box-shadow:none;}
+  .part.nope{background:#FFD5D7;}
+  .chain{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin:22px 0 0;padding:0;list-style:none;}
+  .chain li{position:relative;min-height:84px;border:2px dashed #8FD6B6;border-radius:var(--r-sm);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-weight:700;font-size:14px;text-align:center;padding:10px;color:var(--ink-soft);}
+  .chain li + li::before{content:"";position:absolute;left:-30px;top:50%;width:28px;border-top:3px solid #8FD6B6;}
+  .chain li.filled{border:2px solid var(--ink);background:#fff;color:var(--ink);animation:pop .3s cubic-bezier(.2,.9,.3,1.3);}
+  .chain li.filled::before{border-color:var(--ink);}
+  .chain li.filled svg.lucide{width:26px;height:26px;color:var(--violet);}
 
-  /* ---------- EXPERIENCE ---------- */
-  .tl-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;}
-  .tl-filters{display:flex;flex-wrap:wrap;gap:8px;}
-  .tl-filter{
-    font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:var(--ink-soft);
-    background:var(--paper);border:1px solid var(--line);border-radius:100px;
-    padding:9px 16px;cursor:pointer;transition:all .15s ease;
-  }
-  .tl-filter:hover{border-color:var(--ink);color:var(--ink);}
-  .tl-filter.active{background:var(--ink);border-color:var(--ink);color:var(--paper);}
-  .tl-meta-row{display:flex;align-items:center;gap:14px;}
-  .tl-count{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-soft);}
-  .tl-toggle-all{
-    font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;color:var(--accent-text);
-    background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;
-  }
-  .tl-toggle-all:hover{color:var(--ink);}
+  /* game 4: ship or hold */
+  .feature{background:#fff;border-radius:var(--r-sm);padding:22px;border:2px solid var(--ink);max-width:560px;}
+  .feature h4{font-size:22px;margin-bottom:14px;}
+  .bars{display:grid;gap:10px;margin-bottom:18px;}
+  .bar{display:grid;grid-template-columns:130px 1fr 32px;align-items:center;gap:10px;font-weight:600;font-size:15px;}
+  .bar .label{display:flex;align-items:center;gap:6px;}
+  .bar .track{height:12px;border-radius:999px;background:var(--violet-tint);overflow:hidden;}
+  .bar .track i{display:block;height:100%;border-radius:999px;background:var(--violet);}
+  .bar.low .track i{background:var(--red);}
+  .bar .n{font-variant-numeric:tabular-nums;text-align:right;}
+  .choices{display:flex;gap:10px;flex-wrap:wrap;}
+  .round{font-size:14px;font-weight:600;color:var(--ink-soft);margin-bottom:8px;}
 
-  .timeline{border-top:1px solid var(--line);}
-  .tl-item{
-    display:grid;grid-template-columns:180px 1fr;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);
-    transition:opacity .2s ease;
-  }
-  .tl-date{
-    font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);padding-top:3px;
-    position:relative;padding-left:20px;
-  }
-  .tl-date::before{
-    content:"";position:absolute;left:0;top:5px;width:9px;height:9px;border-radius:50%;
-    background:var(--line);box-shadow:0 0 0 3px var(--paper);transition:background .2s ease,box-shadow .2s ease;
-  }
-  .tl-item:has(.tl-toggle[aria-expanded="true"]) .tl-date::before{
-    background:var(--accent);box-shadow:0 0 0 4px rgba(255,46,154,0.16);
-  }
-  .tl-role{min-width:0;}
-  .tl-toggle{
-    display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
-    width:100%;background:none;border:none;padding:0;margin:0;cursor:pointer;text-align:left;font:inherit;color:inherit;
-  }
-  .tl-toggle h4{font-size:18px;font-weight:700;}
-  .tl-toggle .co{color:var(--accent-text);font-weight:600;font-size:14px;margin-top:2px;}
-  .tl-chevron{
-    flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);
-    display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;color:var(--ink-soft);
-    transition:transform .25s ease,background .2s ease,color .2s ease,border-color .2s ease;margin-top:2px;
-  }
-  .tl-toggle:hover .tl-chevron{border-color:var(--ink);color:var(--ink);}
-  .tl-toggle[aria-expanded="true"] .tl-chevron{
-    transform:rotate(135deg);background:var(--ink);color:var(--paper);border-color:var(--ink);
-  }
-  .tl-details-wrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}
-  .tl-details-wrap.open{grid-template-rows:1fr;}
-  .tl-details-inner{overflow:hidden;}
-  .tl-details{margin:14px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
-  .tl-details li{margin-bottom:5px;}
-  .tl-early{color:var(--ink-soft);font-size:14.5px;}
+  /* how I work */
+  .how{background:var(--violet-tint);color:var(--ink);border-radius:var(--r-lg);padding:52px 48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+  .how h2{font-size:clamp(30px,3.8vw,44px);font-weight:800;margin-bottom:18px;}
+  .how p{color:var(--ink-soft);}
+  .term{background:#0E0B17;border:1px solid #3A3450;border-radius:16px;padding:20px 22px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;line-height:1.85;min-height:250px;}
+  .term-head{display:flex;align-items:center;gap:8px;color:#9C95B5;margin-bottom:10px;font-family:var(--body);font-size:13px;font-weight:600;}
+  .term div.l{opacity:0;transform:translateY(4px);transition:opacity .2s ease-out,transform .2s ease-out;}
+  .term div.l.on{opacity:1;transform:none;}
+  .term .c{color:#9C95B5;}
+  .term .g{color:var(--green);}
+  .term .y{color:var(--teal);}
 
-  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:8px;}
-  .edu-grid h4{font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-text);margin-bottom:14px;}
-  .edu-grid ul{margin:0;padding-left:18px;font-size:14.5px;color:var(--ink-soft);}
-  .edu-grid li{margin-bottom:10px;}
-  .edu-grid li b{color:var(--ink);}
+  /* skills */
+  .skills{display:flex;flex-wrap:wrap;gap:12px;max-width:900px;}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:15px;padding:9px 16px;border-radius:999px;border:2px solid var(--ink);background:#fff;transform:rotate(var(--r,0deg));transition:transform .2s ease-out,background-color .15s ease;}
+  .chip:nth-child(3n){--r:-2deg;}
+  .chip:nth-child(4n){--r:1.5deg;}
+  .chip:nth-child(5n+1){background:var(--violet-tint);}
+  .chip:nth-child(7n+2){background:var(--green-tint);}
+  .chip:hover{transform:rotate(0) translateY(-3px);background:var(--green);}
 
-  /* ---------- CONTACT / FOOTER ---------- */
-  footer{
-    background:
-      radial-gradient(ellipse 120% 60% at 50% -10%,rgba(0,229,255,0.28) 0%,transparent 60%),
-      linear-gradient(180deg,#1c0a38 0%,#0f0620 100%);
-    color:var(--cream-on-dark);border-radius:24px;margin:0 32px 32px;
-    padding:80px 48px;text-align:center;position:relative;overflow:hidden;
-  }
-  footer::before{
-    content:"";position:absolute;top:0;left:0;right:0;height:3px;
-    background:linear-gradient(90deg,var(--accent),var(--accent3),var(--accent2));
-  }
-  footer h2{color:#fff;font-size:clamp(30px,5vw,54px);max-width:760px;margin:0 auto 22px;}
-  footer p.sub{color:#B9B7AE;max-width:480px;margin:0 auto 36px;font-size:16px;}
-  .footer-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;}
-  .footer-cta .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff;}
-  .footer-cta .btn-primary:hover{background:#fff;color:var(--dark);border-color:#fff;}
-  .footer-cta .btn-ghost{border-color:#3a3a42;color:#fff;}
-  .footer-cta .btn-ghost:hover{background:#fff;color:var(--dark);border-color:#fff;}
-  .footer-bottom{
-    border-top:1px solid var(--dark-line);padding-top:28px;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-    font-size:12.5px;color:#8a8a90;font-family:'JetBrains Mono',monospace;
-  }
-  .footer-bottom .credit{display:flex;align-items:center;gap:6px;}
-  .footer-bottom .credit .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;}
+  /* experience */
+  .tl-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px;}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;}
+  .filter{font:600 15px var(--body);color:var(--ink);background:#fff;border:2px solid var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer;transition:background-color .15s ease,color .15s ease;}
+  .filter:hover{background:var(--violet-tint);}
+  .filter[aria-pressed="true"]{background:var(--ink);color:var(--paper);}
+  .toggle-all{font:600 15px var(--body);color:var(--violet-ink);background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:4px;}
+  .count{font-size:14px;color:var(--ink-soft);margin-right:12px;}
+  .job{display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;padding:20px 0;border-top:2px solid var(--ink);}
+  .job[hidden]{display:none;}
+  .job:last-child{border-bottom:2px solid var(--ink);}
+  .job .when{font-weight:600;font-size:15px;color:var(--ink-soft);padding-top:4px;font-variant-numeric:tabular-nums;}
+  .job-btn{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;width:100%;background:none;border:none;padding:0;margin:0;text-align:left;cursor:pointer;}
+  .job-title{display:block;font-family:var(--display);font-size:22px;font-weight:700;line-height:1.15;letter-spacing:-0.02em;}
+  .job-btn .co{font-weight:600;color:var(--ink-soft);font-size:15px;margin-top:4px;display:block;}
+  .plus{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;transition:transform .25s ease-out,background-color .15s ease;}
+  .job-btn:hover .plus{background:var(--green);}
+  .job-btn[aria-expanded="true"] .plus{transform:rotate(45deg);background:var(--magenta);}
+  .details{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease-out;}
+  .details.open{grid-template-rows:1fr;}
+  .details > div{overflow:hidden;}
+  .details ul{margin-top:12px;color:var(--ink-soft);font-size:16px;}
 
-  /* ---------- REVEAL ANIM ---------- */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
-  .reveal.in{opacity:1;transform:translateY(0);}
+  .edu{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px;}
+  .edu h3{font-size:22px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .edu ul{color:var(--ink-soft);font-size:16px;}
+  .edu b{color:var(--ink);}
 
-  /* ---------- RESPONSIVE ---------- */
-  @media (max-width:1040px) and (min-width:901px){
-    nav.links{gap:16px;}
-    nav.links a{font-size:13px;}
-    .nav-cta{padding:9px 14px;}
+  /* contact: night sky again, static */
+  .contact{position:relative;isolation:isolate;overflow:hidden;margin:96px 0 24px;background:var(--night);color:#fff;border-radius:var(--r-lg);padding:64px 48px 140px;}
+  .contact .aurora{opacity:.7;}
+  .contact .band{animation:none;}
+  .contact h2{font-size:clamp(36px,5.6vw,72px);font-weight:800;max-width:14ch;margin-bottom:24px;}
+  .contact .big{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-weight:800;font-size:clamp(20px,3.4vw,40px);color:var(--green);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;overflow-wrap:anywhere;}
+  .contact .big:hover{color:#fff;}
+  .contact p.small{margin-top:18px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:#CDD2EC;}
+  .contact p.small a{color:#fff;}
+  footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:12px 0 40px;font-size:14px;color:var(--ink-soft);}
+
+  @media (max-width:860px){
+    .nav nav a:not(.btn){display:none;}
+    .nav nav{gap:10px;}
+    .logo{font-size:17px;}
+    .logo,.btn{white-space:nowrap;}
+    .hero{padding-top:16px;}
+    .case{padding:28px 20px;}
+    .case-top{grid-template-columns:1fr;gap:16px;}
+    .q{grid-template-columns:1fr;padding:18px;}
+    .q img{width:52px;height:52px;}
+    .chain{grid-template-columns:1fr 1fr;gap:12px;}
+    .chain li + li::before{display:none;}
+    .bar{grid-template-columns:110px 1fr 28px;font-size:14px;}
+    .how{grid-template-columns:1fr;padding:34px 20px;}
+    .job{grid-template-columns:1fr;gap:6px;}
+    .edu{grid-template-columns:1fr;gap:28px;}
+    .contact{padding:40px 20px;}
+    .stickers{display:grid;grid-template-columns:1fr 1fr;padding:0 8px;gap:12px;}
+    .sticker{min-width:0;padding:10px 12px;}
+    .sticker b{font-size:22px;}
+    .sticker span{font-size:13px;line-height:1.3;display:block;}
+    .sky{padding:20px 20px 100px;}
+    .motion{position:static;margin-bottom:16px;}
+    .sensor{padding:18px 16px 14px;margin-top:36px;}
+    .contact{padding-bottom:120px;}
+    .spot{max-width:220px;}
+    .sensor svg.trace{height:110px;}
   }
-  @media (max-width:900px){
-    nav.links{display:none;}
-    .burger{display:block;}
-    .stats-inner{grid-template-columns:repeat(2,1fr);}
-    .stat:nth-child(3){border-left:none;}
-    .pillars{grid-template-columns:1fr;}
-    .case{grid-template-columns:1fr;gap:28px;}
-    .case-meta{position:static;}
-    .claude-grid{grid-template-columns:1fr;}
-    .claude-sec,footer{margin:0 16px;padding:48px 24px;border-radius:18px;}
-    .skills-grid{grid-template-columns:1fr;gap:36px;}
-    .tl-item{grid-template-columns:1fr;gap:8px;}
-    .tl-controls{flex-direction:column;align-items:flex-start;}
-    .edu-grid{grid-template-columns:1fr;gap:28px;}
-    .hyp-grid{grid-template-columns:1fr;}
-    .wrap{padding:0 20px;}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{transition:none !important;animation:none !important;}
+    .motion{display:none;}
   }
 </style>
 </head>
 <body>
+<a class="skip" href="#work">Skip to my work</a>
 
 <header class="nav">
-  <div class="nav-inner">
-    <a href="#top" class="logo"><span class="dot"></span>Valentina Chinnici</a>
-    <nav class="links" id="navLinks">
+  <div class="wrap">
+    <a class="logo" href="#top">Valentina Chinnici</a>
+    <nav aria-label="Sections">
       <a href="#work">Work</a>
-      <a href="#claude">How I Work</a>
-      <a href="#skills">Skills</a>
+      <a href="#how">How I work</a>
       <a href="#experience">Experience</a>
-      <a href="#contact" class="nav-cta">Let's talk</a>
+      <span class="score" id="score" title="Games completed"><i data-lucide="gamepad-2"></i><span><span id="scoreN">0</span>/4</span></span>
+      <a class="btn" href="#contact">Say hi</a>
     </nav>
-    <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" onclick="const l=document.querySelector('.links');const open=l.classList.toggle('mobile-open');this.setAttribute('aria-expanded',open);this.classList.toggle('is-open',open);">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
 <main id="top">
+  <div class="wrap">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">AI Product Manager · B2B SaaS · Agentic AI</div>
-      <h1>I turn customer conversations into <span class="accent">roadmaps that ship.</span></h1>
-      <p class="lede">8+ years building AI-powered and no-code B2B SaaS products across MarTech and EdTech — from a $500K Google partnership to the evidence-backed research now shaping an enterprise AI roadmap.</p>
-      <div class="hero-cta">
-        <a href="#work" class="btn btn-primary">View case studies ↓</a>
-        <a href="mailto:valentina.chinnici@gmail.com" class="btn btn-ghost">valentina.chinnici@gmail.com</a>
-        <a href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
+    <section class="hero">
+      <div class="sky">
+        <button type="button" class="motion" id="motion" aria-pressed="false"><i data-lucide="pause"></i><span>Pause motion</span></button>
+        <div class="aurora" id="aurora" aria-hidden="true"><i class="band b1"></i><i class="band b2"></i><i class="band b3"></i><i class="band b4"></i></div>
+        <svg class="stars" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle class="tw" cx="673" cy="85" r="1.6" opacity="0.35"/><circle cx="158" cy="282" r="0.8" opacity="0.7"/><circle cx="128" cy="267" r="1" opacity="0.35"/><circle cx="186" cy="230" r="1.6" opacity="0.35"/><circle cx="502" cy="54" r="2" opacity="0.9"/><circle cx="131" cy="297" r="0.8" opacity="0.5"/><circle class="tw" cx="136" cy="303" r="2" opacity="0.9"/><circle cx="111" cy="121" r="0.8" opacity="0.5"/><circle cx="603" cy="222" r="1" opacity="0.35"/><circle cx="1179" cy="165" r="2" opacity="0.5"/><circle cx="221" cy="305" r="2" opacity="0.5"/><circle cx="772" cy="57" r="2" opacity="0.35"/><circle class="tw" cx="1165" cy="38" r="2" opacity="0.5"/><circle cx="1026" cy="356" r="2" opacity="0.9"/><circle cx="653" cy="246" r="2" opacity="0.9"/><circle cx="750" cy="161" r="1" opacity="0.5"/><circle cx="509" cy="49" r="2" opacity="0.7"/><circle cx="1085" cy="261" r="1.2" opacity="0.9"/><circle class="tw" cx="599" cy="319" r="0.8" opacity="0.35"/><circle cx="1058" cy="222" r="1" opacity="0.7"/><circle cx="321" cy="258" r="1.6" opacity="0.35"/><circle cx="168" cy="399" r="2" opacity="0.7"/><circle cx="706" cy="363" r="1.2" opacity="0.9"/><circle cx="944" cy="43" r="0.8" opacity="0.7"/><circle class="tw" cx="980" cy="364" r="0.8" opacity="0.35"/><circle cx="644" cy="339" r="2" opacity="0.9"/><circle cx="592" cy="374" r="1.6" opacity="0.7"/><circle cx="56" cy="244" r="1.2" opacity="0.5"/><circle cx="249" cy="260" r="0.8" opacity="0.5"/><circle cx="598" cy="74" r="1" opacity="0.9"/><circle class="tw" cx="810" cy="262" r="0.8" opacity="0.5"/><circle cx="929" cy="213" r="2" opacity="0.7"/><circle cx="290" cy="228" r="2" opacity="0.7"/><circle cx="860" cy="191" r="1.6" opacity="0.5"/><circle cx="319" cy="50" r="1" opacity="0.5"/><circle cx="485" cy="345" r="1" opacity="0.35"/><circle class="tw" cx="1003" cy="309" r="1" opacity="0.7"/><circle cx="587" cy="10" r="1" opacity="0.9"/><circle cx="1104" cy="197" r="2" opacity="0.7"/><circle cx="267" cy="361" r="2" opacity="0.35"/><circle cx="945" cy="407" r="2" opacity="0.9"/><circle cx="825" cy="212" r="1.6" opacity="0.35"/><circle class="tw" cx="996" cy="332" r="1.6" opacity="0.35"/><circle cx="400" cy="42" r="1" opacity="0.9"/><circle cx="342" cy="64" r="1.2" opacity="0.35"/><circle cx="219" cy="8" r="2" opacity="0.5"/><circle cx="1108" cy="59" r="1.2" opacity="0.35"/><circle cx="154" cy="114" r="2" opacity="0.9"/></svg>
+        <svg class="peaks" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="#151C42" d="M0 150V92l90-38 70 30 110-62 90 52 60-24 120 58 80-40 110 46 90-56 100 40 90-30 90 44v88z"/>
+          <path fill="#0E1433" d="M0 150v-30l120-26 90 22 130-40 110 34 90-18 150 30 110-28 120 22 110-30 170 36v28z"/>
+        </svg>
+      <div class="status"><i data-lucide="map-pin"></i>AI Product Manager at Beefree, Turin</div>
+      <h1>I build AI features by listening to customers first.</h1>
+      <p class="lede">I'm Valentina. 8 years in B2B SaaS and EdTech, at Arduino and Beefree. This site is four tiny games about my work. Play them, or just scroll.</p>
+      <div class="actions">
+        <a class="btn" href="#work"><i data-lucide="gamepad-2"></i>Start playing</a>
+        <a class="btn ghost" href="mailto:valentina.chinnici@gmail.com"><i data-lucide="mail"></i>Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i>LinkedIn</a>
       </div>
-      <div class="hero-meta">
-        <span><span class="pulse"></span> Currently AI PM @ BEE (Beefree)</span>
-        <span>📍 Italy</span>
-        <span>Open to relocation & remote</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stats-inner">
-      <div class="stat"><div class="num">8+</div><div class="label">Years in Product & GTM</div></div>
-      <div class="stat"><div class="num">1M+</div><div class="label">Downloads shipped (Arduino Science Journal)</div></div>
-      <div class="stat"><div class="num">$500K</div><div class="label">Partnership secured with Google</div></div>
-      <div class="stat"><div class="num">30%</div><div class="label">Efficiency lift from AI feature roadmap</div></div>
+      <div class="sensor" id="g1">
+        <span class="game-tag"><i data-lucide="activity"></i>Game 1: Be the sensor</span>
+        <div class="sensor-head">
+          <p>Shake your cursor (or drag your finger) past 2,500 px/s to light up the aurora and unlock my numbers.</p>
+          <div class="reading"><span id="reading">0</span><small>px/s</small></div>
+        </div>
+        <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+        <svg class="trace" viewBox="0 0 600 140" preserveAspectRatio="none" aria-hidden="true">
+          <g class="grid"><line x1="0" y1="35" x2="600" y2="35"/><line x1="0" y1="70" x2="600" y2="70"/><line x1="0" y1="105" x2="600" y2="105"/></g>
+          <polyline id="trace" points=""/>
+        </svg>
+        <div class="sensor-foot">
+          <span>A nod to Arduino Science Journal, which turned phones into lab sensors for schools.</span>
+          <button type="button" class="linkbtn" id="skip1">Skip and show numbers</button>
+        </div>
+      </div>
+      </div>
+      <div class="stickers" id="stickers" aria-live="polite">
+        <div class="sticker"><span class="lock"><i data-lucide="lock"></i>Locked</span><div class="val"><b>8+ years</b><span>product and go-to-market</span></div></div>
+        <div class="sticker"><span class="lock"><i data-lucide="lock"></i>Locked</span><div class="val"><b>1M+</b><span>downloads shipped</span></div></div>
+        <div class="sticker"><span class="lock"><i data-lucide="lock"></i>Locked</span><div class="val"><b>$500K</b><span>Google partnership</span></div></div>
+        <div class="sticker"><span class="lock"><i data-lucide="lock"></i>Locked</span><div class="val"><b>+30%</b><span>efficiency from AI features</span></div></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="sec-title">Selected work</h2>
+      <p class="sec-sub">Three projects, three games. Each one shows how I actually made the call.</p>
+
+      <!-- GAME 2 -->
+      <article class="case magenta" id="g2">
+        <div class="case-top">
+          <div>
+            <span class="game-tag"><i data-lucide="target"></i>Game 2: Find the job</span>
+            <h3>Four discovery calls, one agentic AI roadmap</h3>
+            <p class="lead">Beefree's MCP beta feedback was scattered. I used Jobs-to-be-Done to find what partners were really hiring it for.</p>
+          </div>
+          <div class="side">
+            <svg class="spot sort" viewBox="0 0 240 150" aria-hidden="true">
+              <defs><clipPath id="pc0"><circle cx="36" cy="24" r="15"/></clipPath><clipPath id="pc1"><circle cx="92" cy="24" r="15"/></clipPath><clipPath id="pc2"><circle cx="148" cy="24" r="15"/></clipPath><clipPath id="pc3"><circle cx="204" cy="24" r="15"/></clipPath></defs>
+              <g class="n" style="--dx:24px;--dy:43px"><path class="f-g s" d="M31 50l5-6 5 6z"/><rect class="f-g s" x="16" y="49" width="40" height="18" rx="6"/><path class="ln" style="stroke:var(--ink);stroke-width:2.5" d="M24 58h24"/></g>
+              <g class="n" style="--dx:28px;--dy:43px"><path class="f-v s" d="M87 50l5-6 5 6z"/><rect class="f-v s" x="72" y="49" width="40" height="18" rx="6"/><path class="ln" style="stroke:#fff;stroke-width:2.5" d="M80 58h24"/></g>
+              <g class="n" style="--dx:32px;--dy:43px"><path class="f-m s" d="M143 50l5-6 5 6z"/><rect class="f-m s" x="128" y="49" width="40" height="18" rx="6"/><path class="ln" style="stroke:var(--ink);stroke-width:2.5" d="M136 58h24"/></g>
+              <g class="n" style="--dx:-24px;--dy:43px"><path class="f-t s" d="M199 50l5-6 5 6z"/><rect class="f-t s" x="184" y="49" width="40" height="18" rx="6"/><path class="ln" style="stroke:var(--ink);stroke-width:2.5" d="M192 58h24"/></g>
+              <image href="https://api.dicebear.com/9.x/notionists/svg?seed=Implementation&amp;backgroundColor=2fe0a0" x="21" y="9" width="30" height="30" clip-path="url(#pc0)"/><circle class="s" fill="none" cx="36" cy="24" r="15"/>
+              <image href="https://api.dicebear.com/9.x/notionists/svg?seed=Compliance&amp;backgroundColor=7c5cff" x="77" y="9" width="30" height="30" clip-path="url(#pc1)"/><circle class="s" fill="none" cx="92" cy="24" r="15"/>
+              <image href="https://api.dicebear.com/9.x/notionists/svg?seed=Founder&amp;backgroundColor=e04fc2" x="133" y="9" width="30" height="30" clip-path="url(#pc2)"/><circle class="s" fill="none" cx="148" cy="24" r="15"/>
+              <image href="https://api.dicebear.com/9.x/notionists/svg?seed=Growth&amp;backgroundColor=25c2d9" x="189" y="9" width="30" height="30" clip-path="url(#pc3)"/><circle class="s" fill="none" cx="204" cy="24" r="15"/>
+              <path class="f-v" d="M226 76l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+              <path class="f-m" d="M14 84l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+              <rect class="fill f-g" x="42" y="100" width="36" height="38" rx="4"/>
+              <rect class="s" fill="none" x="38" y="96" width="44" height="46" rx="8"/>
+              <rect class="f-w s" x="48" y="108" width="24" height="16" rx="3"/><path class="ic" d="M54 112h12M54 116h12M54 120h12"/>
+              <g class="ok"><circle class="f-g s" cx="78" cy="97" r="7"/><path fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M74.5 97l2.5 2.5 4.5-5"/></g>
+              <rect class="fill f-v" x="102" y="100" width="36" height="38" rx="4"/>
+              <rect class="s" fill="none" x="98" y="96" width="44" height="46" rx="8"/>
+              <rect class="f-w s" x="108" y="108" width="24" height="16" rx="3"/><path class="ic" d="M120 109.5l6 2.5v4c0 4-3 6.5-6 7.5-3-1-6-3.5-6-7.5v-4z"/>
+              <g class="ok"><circle class="f-g s" cx="138" cy="97" r="7"/><path fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M134.5 97l2.5 2.5 4.5-5"/></g>
+              <rect class="fill f-m" x="162" y="100" width="36" height="38" rx="4"/>
+              <rect class="s" fill="none" x="158" y="96" width="44" height="46" rx="8"/>
+              <rect class="f-w s" x="168" y="108" width="24" height="16" rx="3"/><path class="ic" d="M177 112l-4 4 4 4M183 112l4 4-4 4"/>
+              <g class="ok"><circle class="f-g s" cx="198" cy="97" r="7"/><path fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M194.5 97l2.5 2.5 4.5-5"/></g>
+            </svg>
+            <ul class="icon-list facts">
+            <li><i data-lucide="briefcase"></i>AI PM and lead researcher, Beefree</li>
+            <li><i data-lucide="users"></i>4 enterprise and growth-stage partners</li>
+            <li><i data-lucide="puzzle"></i>Jobs-to-be-Done forces analysis</li>
+          </ul>
+          </div>
+        </div>
+        <p class="how-to">Which job is each partner hiring the MCP to do?</p>
+        <div class="quotes">
+          <div class="q" data-a="volume" data-why="Right. Producing content offline, at scale, means no open editor: headless.">
+            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Implementation&backgroundColor=2fe0a0" alt="" width="64" height="64" loading="lazy">
+            <div>
+              <blockquote><mark>“Headless MCP is something that we would value a lot… many use cases require producing content offline.”</mark></blockquote>
+              <cite>Implementation lead, enterprise partner</cite>
+              <div class="opts"><button type="button" class="opt" data-v="volume">High-volume campaigns</button><button type="button" class="opt" data-v="brand">Brand-safe personalization</button><button type="button" class="opt" data-v="dev">Developer experience</button></div>
+              <p class="fb" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="q" data-a="brand" data-why="Right. In regulated industries the agent must never touch structure, legal or brand.">
+            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Compliance&backgroundColor=7c5cff" alt="" width="64" height="64" loading="lazy">
+            <div>
+              <blockquote><mark>“We need to severely restrict the creativity of this agent. It’s not allowed to change the structure.”</mark></blockquote>
+              <cite>Compliance lead, regulated-industry partner</cite>
+              <div class="opts"><button type="button" class="opt" data-v="volume">High-volume campaigns</button><button type="button" class="opt" data-v="brand">Brand-safe personalization</button><button type="button" class="opt" data-v="dev">Developer experience</button></div>
+              <p class="fb" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="q" data-a="dev" data-why="Right. Non-coders are building with agents now, so docs and setup have to work for them too.">
+            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Founder&backgroundColor=e04fc2" alt="" width="64" height="64" loading="lazy">
+            <div>
+              <blockquote><mark>“I’m not a coder… I’ve pretty much got an enterprise-level production-ready software that I’ve vibe coded.”</mark></blockquote>
+              <cite>Non-technical founder, SMB partner</cite>
+              <div class="opts"><button type="button" class="opt" data-v="volume">High-volume campaigns</button><button type="button" class="opt" data-v="brand">Brand-safe personalization</button><button type="button" class="opt" data-v="dev">Developer experience</button></div>
+              <p class="fb" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+        <div class="prize" id="prize2">
+          <h4><i data-lucide="trophy"></i>That's what I found too</h4>
+          <p>Those three jobs became six roadmap hypotheses: headless capability, deterministic guardrails, AI-ready docs, tool grouping, server-side template analysis, and model and EU-hosting choice.</p>
+          <p><b>The big shift:</b> headless went from nice-to-have to the top enterprise blocker. It now drives the next roadmap cycle.</p>
+        </div>
+      </article>
+
+      <!-- GAME 3 -->
+      <article class="case green" id="g3">
+        <div class="case-top">
+          <div>
+            <span class="game-tag"><i data-lucide="cpu"></i>Game 3: Wire the kit</span>
+            <h3>A physics lab for middle schools, with Google</h3>
+            <p class="lead">Middle schools couldn't afford lab gear. We built custom hardware that plugged straight into Google's Science Journal app.</p>
+          </div>
+          <div class="side">
+            <svg class="spot lab" viewBox="0 0 240 150" aria-hidden="true">
+              <path class="f-v" d="M120 8l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+              <path class="f-m" d="M138 118l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+              <rect class="f-w s" x="10" y="132" width="78" height="10" rx="5"/>
+              <rect class="f-w s" x="18" y="18" width="7" height="114" rx="2"/>
+              <path class="ln" d="M22 22h50"/>
+              <g class="pendulum">
+                <path class="ln" d="M64 22v62"/>
+                <rect class="f-t s" x="51" y="84" width="26" height="20" rx="4"/>
+                <rect class="f-i" x="57" y="89" width="11" height="9" rx="1.5"/>
+                <circle class="f-g" cx="72.5" cy="99" r="2"/>
+              </g>
+              <path class="waves" fill="none" stroke="var(--violet)" stroke-width="3.5" stroke-linecap="round" d="M102 76a14 14 0 0 1 0 24M112 68a26 26 0 0 1 0 40"/>
+              <rect class="f-w s" x="148" y="12" width="76" height="126" rx="13"/>
+              <path class="ln" d="M160 30h30"/>
+              <path fill="none" stroke="var(--rule)" stroke-width="2" d="M160 76h52M160 52v48"/>
+              <path class="graph" pathLength="100" fill="none" stroke="var(--magenta)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M160 76q6.5-22 13 0t13 0 13 0 13 0"/>
+              <path class="ln" d="M178 124h16"/>
+            </svg>
+            <ul class="icon-list facts">
+            <li><i data-lucide="briefcase"></i>Product Manager, Arduino</li>
+            <li><i data-lucide="users"></i>Team of 5: engineering, UX, hardware</li>
+            <li><i data-lucide="shield-check"></i>NGSS, UK curriculum, COPPA, GDPR</li>
+          </ul>
+          </div>
+        </div>
+        <p class="how-to">Tap the parts in the order the data travels, from experiment to classroom.</p>
+        <div class="parts" id="parts">
+          <button type="button" class="part" data-step="3"><i data-lucide="smartphone"></i>Science Journal app</button>
+          <button type="button" class="part" data-step="1"><i data-lucide="cpu"></i>MKR WiFi 1010 board</button>
+          <button type="button" class="part" data-step="4"><i data-lucide="school"></i>Classroom</button>
+          <button type="button" class="part" data-step="2"><i data-lucide="bluetooth"></i>Bluetooth</button>
+        </div>
+        <p class="fb" id="fb3" aria-live="polite">Hint: start where the measurement happens.</p>
+        <ol class="chain" id="chain"><li>1</li><li>2</li><li>3</li><li>4</li></ol>
+        <div class="prize" id="prize3">
+          <h4><i data-lucide="trophy"></i>Shipped</h4>
+          <ul class="icon-list">
+            <li><i data-lucide="smartphone"></i><span><b>1M+ downloads</b> since the 2020 launch, shown live at NSTA19 next to Google's booth</span></li>
+            <li><i data-lucide="users"></i><span><b>+30% users</b> from the new middle-school segment</span></li>
+            <li><i data-lucide="award"></i><span><b>$500K</b> from Google for the long-term roadmap</span></li>
+          </ul>
+        </div>
+        <details class="story">
+          <summary>How I ran it<i data-lucide="chevron-down"></i></summary>
+          <p>Hardware ran on Kanban and waterfall for its long lead times; content, design and the Android app ran Agile, so firmware could keep learning from content tests. I led the Google negotiation and coordinated both companies' engineers to a public launch date. Content shipped in six languages.</p>
+        </details>
+      </article>
+
+      <!-- GAME 4 -->
+      <article class="case teal" id="g4">
+        <div class="case-top">
+          <div>
+            <span class="game-tag"><i data-lucide="rocket"></i>Game 4: Ship or hold?</span>
+            <h3>AI features on a no-code platform</h3>
+            <p class="lead">At Beefree I set the bar every AI feature must clear before it ships: performance, usability and ethics.</p>
+          </div>
+          <div class="side">
+            <svg class="spot launchpad" viewBox="0 0 240 150" aria-hidden="true">
+              <path class="f-v" d="M34 18l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+              <path class="f-t" d="M206 10l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+              <path class="f-m" d="M88 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+              <rect class="f-w s" x="54" y="36" width="16" height="92" rx="2"/>
+              <path class="ln" d="M54 56l16 14M70 56l-16 14M54 84l16 14M70 84l-16 14M70 62h30"/>
+              <g class="rocket">
+                <g class="flame"><path class="f-g s" d="M106 100q14 34 28 0z"/><path class="f-w" d="M113 101q7 16 14 0z"/></g>
+                <path class="f-m s" d="M101 78l-15 26 15-4zM139 78l15 26-15-4z"/>
+                <path class="f-w s" d="M120 14c19 15 22 46 20 86h-40c-2-40 1-71 20-86z"/>
+                <path class="ln" d="M106 36h28"/>
+                <circle class="f-t s" cx="120" cy="60" r="10"/>
+              </g>
+              <circle class="f-w s" cx="96" cy="124" r="8"/><circle class="f-w s" cx="146" cy="123" r="9"/>
+              <rect class="f-w s" x="16" y="128" width="208" height="12" rx="6"/>
+              <rect class="f-i" x="168" y="46" width="60" height="74" rx="10"/>
+              <circle class="f-g" cx="182" cy="64" r="6"/><circle class="f-g" cx="182" cy="83" r="6"/><circle class="f-g" cx="182" cy="102" r="6"/>
+              <path fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" d="M194 64h22M194 83h16M194 102h20"/>
+            </svg>
+            <ul class="icon-list facts">
+            <li><i data-lucide="briefcase"></i>AI Product Manager, since 2023</li>
+            <li><i data-lucide="wrench"></i>n8n, Lovable, Claude</li>
+            <li><i data-lucide="gauge"></i>+30% efficiency and satisfaction</li>
+          </ul>
+          </div>
+        </div>
+        <p class="how-to">You're the PM. A feature ships only if all three scores are 6 or higher. Made-up examples.</p>
+        <div id="ship"></div>
+        <p class="fb" id="fb4" aria-live="polite"></p>
+        <div class="prize" id="prize4">
+          <h4><i data-lucide="trophy"></i>You think like my framework</h4>
+          <p>That three-way check is the evaluation framework I built at Beefree. The team still uses it, alongside the n8n and Lovable automations I built for faster experiments.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="how">
+      <div class="how">
+        <div>
+          <h2>Claude is my research analyst and automation engineer.</h2>
+          <p>Raw call transcripts in, a structured Jobs-to-be-Done analysis out, in the time one write-up used to take.</p>
+          <p>With n8n and Lovable, an automation idea becomes a working prototype in an afternoon. Claude also helped build this site.</p>
+        </div>
+        <div class="term" id="term" aria-label="Example of a research synthesis run">
+          <div class="term-head"><i data-lucide="terminal"></i>terminal</div>
+          <div class="l">$ claude synthesize --calls discovery_q3</div>
+          <div class="l c">reading 4 anonymized call transcripts</div>
+          <div class="l g">3 core jobs identified</div>
+          <div class="l g">push / pull / anxiety / habit mapped</div>
+          <div class="l y">6 opportunity hypotheses ready for review</div>
+          <div class="l" style="margin-top:12px;">$ claude build --project portfolio</div>
+          <div class="l c">drafting content from CV and case studies</div>
+          <div class="l y">shipped.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="sec-title">What I reach for</h2>
+      <div class="skills">
+        <span class="chip"><i data-lucide="search"></i>Product discovery</span><span class="chip"><i data-lucide="target"></i>Jobs-to-be-Done</span><span class="chip"><i data-lucide="map"></i>Roadmapping</span><span class="chip">Shape Up</span><span class="chip">Scrum</span><span class="chip">Kanban</span><span class="chip">OKRs</span><span class="chip"><i data-lucide="megaphone"></i>Go-to-market</span><span class="chip"><i data-lucide="scale"></i>AI evaluation</span><span class="chip">Prompt design</span><span class="chip"><i data-lucide="shield-check"></i>Ethical AI</span><span class="chip"><i data-lucide="split"></i>A/B testing</span><span class="chip">Metrics</span><span class="chip"><i data-lucide="workflow"></i>n8n</span><span class="chip">Lovable</span><span class="chip">Claude</span><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Miro</span><span class="chip">Airtable</span><span class="chip"><i data-lucide="bar-chart-3"></i>Microsoft BI</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="sec-title">Experience</h2>
+      <div class="tl-controls">
+        <div class="filters" role="group" aria-label="Filter roles by company">
+          <button type="button" class="filter" data-f="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-f="bee" aria-pressed="false">Beefree</button>
+          <button type="button" class="filter" data-f="arduino" aria-pressed="false">Arduino</button>
+          <button type="button" class="filter" data-f="early" aria-pressed="false">Early career</button>
+        </div>
+        <div><span class="count" id="count">5 roles</span><button type="button" class="toggle-all" id="toggleAll">Expand all</button></div>
+      </div>
+      <div id="jobs">
+        <div class="job" data-co="bee">
+          <div class="when">Aug 2023 to now</div>
+          <div>
+            <button type="button" class="job-btn" aria-expanded="true" aria-controls="j1"><span><span class="job-title">AI Product Manager</span><span class="co">Beefree, Turin</span></span><span class="plus" aria-hidden="true"><i data-lucide="plus"></i></span></button>
+            <div class="details open" id="j1"><div><ul class="icon-list">
+              <li><i data-lucide="check"></i>AI features for a no-code email, landing page and pop-up builder</li>
+              <li><i data-lucide="check"></i>Vision, roadmap and metrics behind a 30% efficiency lift</li>
+            </ul></div></div>
+          </div>
+        </div>
+        <div class="job" data-co="bee">
+          <div class="when">Mar 2022 to Aug 2023</div>
+          <div>
+            <button type="button" class="job-btn" aria-expanded="false" aria-controls="j2"><span><span class="job-title">Senior Product Marketing Manager</span><span class="co">Beefree, Turin</span></span><span class="plus" aria-hidden="true"><i data-lucide="plus"></i></span></button>
+            <div class="details" id="j2"><div><ul class="icon-list">
+              <li><i data-lucide="check"></i>Go-to-market for BEE Plugin with the product team</li>
+              <li><i data-lucide="check"></i>New company website, +16% pageviews</li>
+            </ul></div></div>
+          </div>
+        </div>
+        <div class="job" data-co="arduino">
+          <div class="when">Aug 2018 to Mar 2022</div>
+          <div>
+            <button type="button" class="job-btn" aria-expanded="false" aria-controls="j3"><span><span class="job-title">Product Manager, EdTech</span><span class="co">Arduino, Turin</span></span><span class="plus" aria-hidden="true"><i data-lucide="plus"></i></span></button>
+            <div class="details" id="j3"><div><ul class="icon-list">
+              <li><i data-lucide="check"></i>Owned Arduino Science Journal and related education products</li>
+              <li><i data-lucide="check"></i>Negotiated the $500K Google partnership; led COPPA and GDPR compliance</li>
+            </ul></div></div>
+          </div>
+        </div>
+        <div class="job" data-co="arduino">
+          <div class="when">Nov 2016 to Jan 2018</div>
+          <div>
+            <button type="button" class="job-btn" aria-expanded="false" aria-controls="j4"><span><span class="job-title">Product Marketing Manager, EdTech</span><span class="co">Arduino, Turin</span></span><span class="plus" aria-hidden="true"><i data-lucide="plus"></i></span></button>
+            <div class="details" id="j4"><div><ul class="icon-list">
+              <li><i data-lucide="check"></i>Go-to-market for Arduino Education; Arduino 101 Starter Kit for Intel</li>
+              <li><i data-lucide="check"></i>Trade shows and events across the US and Europe</li>
+            </ul></div></div>
+          </div>
+        </div>
+        <div class="job" data-co="early">
+          <div class="when">Earlier, London</div>
+          <div>
+            <button type="button" class="job-btn" aria-expanded="false" aria-controls="j5"><span><span class="job-title">Learning innovation and maker education</span><span class="co">Makerini Ltd, Ravensbourne University</span></span><span class="plus" aria-hidden="true"><i data-lucide="plus"></i></span></button>
+            <div class="details" id="j5"><div><ul class="icon-list">
+              <li><i data-lucide="check"></i>Co-founded Makerini; maker education consultant</li>
+              <li><i data-lucide="check"></i>Trained educators on e-learning platforms at Ravensbourne</li>
+            </ul></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu">
+        <div>
+          <h3><i data-lucide="graduation-cap"></i>Education</h3>
+          <ul class="icon-list">
+            <li><i data-lucide="book-open"></i><span><b>MPhil in Pedagogy</b>, Università di Torino (in progress)</span></li>
+            <li><i data-lucide="book-open"></i><span><b>Product Management Program</b>, UC Berkeley Haas</span></li>
+            <li><i data-lucide="book-open"></i><span><b>BS in Education</b>, 110 cum laude, Roma Tre</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3><i data-lucide="award"></i>Certificates</h3>
+          <ul class="icon-list">
+            <li><i data-lucide="badge-check"></i><span><b>Technical Foundations for PMs</b>, Maven, 2024</span></li>
+            <li><i data-lucide="badge-check"></i><span><b>AI Micro-Certification</b>, Product School, 2024</span></li>
+            <li><i data-lucide="badge-check"></i><span><b>AI for Product Management</b>, Pendo, 2024</span></li>
+            <li><i data-lucide="badge-check"></i><span><b>Product-Led Growth</b>, Pendo and Product School, 2022</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact" id="contact">
+      <div class="aurora" aria-hidden="true"><i class="band b2"></i><i class="band b3"></i><i class="band b1" style="left:auto;right:-20%;top:-14%;"></i></div>
+      <svg class="stars" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="673" cy="85" r="1.6" opacity="0.35"/><circle cx="158" cy="282" r="0.8" opacity="0.7"/><circle cx="128" cy="267" r="1" opacity="0.35"/><circle cx="186" cy="230" r="1.6" opacity="0.35"/><circle cx="502" cy="54" r="2" opacity="0.9"/><circle cx="131" cy="297" r="0.8" opacity="0.5"/><circle cx="136" cy="303" r="2" opacity="0.9"/><circle cx="111" cy="121" r="0.8" opacity="0.5"/><circle cx="603" cy="222" r="1" opacity="0.35"/><circle cx="1179" cy="165" r="2" opacity="0.5"/><circle cx="221" cy="305" r="2" opacity="0.5"/><circle cx="772" cy="57" r="2" opacity="0.35"/><circle cx="1165" cy="38" r="2" opacity="0.5"/><circle cx="1026" cy="356" r="2" opacity="0.9"/><circle cx="653" cy="246" r="2" opacity="0.9"/><circle cx="750" cy="161" r="1" opacity="0.5"/><circle cx="509" cy="49" r="2" opacity="0.7"/><circle cx="1085" cy="261" r="1.2" opacity="0.9"/><circle cx="599" cy="319" r="0.8" opacity="0.35"/><circle cx="1058" cy="222" r="1" opacity="0.7"/><circle cx="321" cy="258" r="1.6" opacity="0.35"/><circle cx="168" cy="399" r="2" opacity="0.7"/><circle cx="706" cy="363" r="1.2" opacity="0.9"/><circle cx="944" cy="43" r="0.8" opacity="0.7"/><circle cx="980" cy="364" r="0.8" opacity="0.35"/><circle cx="644" cy="339" r="2" opacity="0.9"/><circle cx="592" cy="374" r="1.6" opacity="0.7"/><circle cx="56" cy="244" r="1.2" opacity="0.5"/><circle cx="249" cy="260" r="0.8" opacity="0.5"/><circle cx="598" cy="74" r="1" opacity="0.9"/><circle cx="810" cy="262" r="0.8" opacity="0.5"/><circle cx="929" cy="213" r="2" opacity="0.7"/><circle cx="290" cy="228" r="2" opacity="0.7"/><circle cx="860" cy="191" r="1.6" opacity="0.5"/><circle cx="319" cy="50" r="1" opacity="0.5"/><circle cx="485" cy="345" r="1" opacity="0.35"/><circle cx="1003" cy="309" r="1" opacity="0.7"/><circle cx="587" cy="10" r="1" opacity="0.9"/><circle cx="1104" cy="197" r="2" opacity="0.7"/><circle cx="267" cy="361" r="2" opacity="0.35"/><circle cx="945" cy="407" r="2" opacity="0.9"/><circle cx="825" cy="212" r="1.6" opacity="0.35"/><circle cx="996" cy="332" r="1.6" opacity="0.35"/><circle cx="400" cy="42" r="1" opacity="0.9"/><circle cx="342" cy="64" r="1.2" opacity="0.35"/><circle cx="219" cy="8" r="2" opacity="0.5"/><circle cx="1108" cy="59" r="1.2" opacity="0.35"/><circle cx="154" cy="114" r="2" opacity="0.9"/></svg>
+      <svg class="peaks" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#151C42" d="M0 150V92l90-38 70 30 110-62 90 52 60-24 120 58 80-40 110 46 90-56 100 40 90-30 90 44v88z"/>
+        <path fill="#0E1433" d="M0 150v-30l120-26 90 22 130-40 110 34 90-18 150 30 110-28 120 22 110-30 170 36v28z"/>
+      </svg>
+      <h2 id="contactTitle">Building AI products? Let's talk.</h2>
+      <a class="big" href="mailto:valentina.chinnici@gmail.com"><i data-lucide="mail"></i>valentina.chinnici@gmail.com</a>
+      <p class="small"><i data-lucide="map-pin"></i>Turin, open to relocation and remote. Also on <a href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </div>
+    <footer><span>© 2026 Valentina Chinnici</span><span>Icons by Lucide, avatars by Notionists (Zoish) via DiceBear. Built with Claude.</span></footer>
   </div>
-
-  <!-- WHAT I DO -->
-  <section id="work">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2>What I actually do</h2>
-        <p>Less deck, more delivery. Three things I get hired to do, over and over.</p>
-      </div>
-      <div class="pillars">
-        <div class="pillar reveal">
-          <span class="idx">01</span>
-          <h3>AI Product Strategy</h3>
-          <p>Contribute to AI product vision and roadmap, and define the evaluation criteria that decide what actually ships — balancing performance, usability and ethics, not just "can we ship it."</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="idx">02</span>
-          <h3>Customer Discovery & Research</h3>
-          <p>Run structured discovery — Jobs-to-be-Done, forces analysis — with enterprise partners to turn scattered qualitative signal into confident, prioritized roadmap bets.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="idx">03</span>
-          <h3>Automation & No-Code Delivery</h3>
-          <p>Build and ship automation workflows with n8n, Lovable and Claude that compress the gap between "idea" and "working prototype" from sprints to hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CASE STUDY 01 — MCP JTBD -->
-  <section style="padding-top:0;">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2>Case studies</h2>
-        <p>Three problems, three different shapes — research, 0→1 hardware/software, and AI feature delivery on a live SaaS platform.</p>
-      </div>
-
-      <div class="case reveal">
-        <div class="case-meta">
-          <span class="case-tag">Case Study 01 — AI Strategy & Research</span>
-          <dl>
-            <dt>Role</dt><dd>AI Product Manager, lead researcher</dd>
-            <dt>Company</dt><dd>BEE (Beefree)</dd>
-            <dt>Partners interviewed</dt><dd>4 enterprise & growth-stage partners (anonymized)</dd>
-            <dt>Method</dt><dd>Jobs-to-be-Done, forces-based analysis</dd>
-          </dl>
-          <div class="case-badges">
-            <div class="badge"><span class="num">3</span><span class="txt">core jobs identified</span></div>
-            <div class="badge"><span class="num">6</span><span class="txt">opportunity hypotheses shipped to roadmap</span></div>
-            <div class="badge"><span class="num">#1</span><span class="txt">"headless MCP" surfaced as top enterprise blocker</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3 class="title">Turning four discovery calls into an agentic AI roadmap</h3>
-          <p class="hook">When Beefree's MCP server hit beta, feedback was scattered across sales calls, support tickets and Slack threads. I built a repeatable framework to find the signal underneath the noise.</p>
-
-          <div class="case-block">
-            <h4>Context</h4>
-            <p>Beefree's MCP server marked a strategic shift — from a standalone content editor to a foundational "agent-based" ecosystem. Partners weren't asking for an editor anymore; they were building multi-agent systems where Beefree needed to act as the "hand" for an external "brain." The problem: nobody had synthesized what that actually required.</p>
-          </div>
-          <div class="case-block">
-            <h4>Approach</h4>
-            <p>I ran structured discovery calls with four enterprise partners building production multi-agent systems, then applied a Jobs-to-be-Done forces framework — push, pull, anxiety, habit — to separate one-off feature requests from the underlying jobs customers were actually hiring the MCP to do. That surfaced three core jobs: <b>High-Volume Campaign Generation</b>, <b>Brand-Compliant Personalization</b>, and <b>Developer Experience</b>.</p>
-          </div>
-          <div class="case-block">
-            <h4>What the evidence said</h4>
-            <blockquote>"Headless MCP is something that we would value a lot... many use cases require producing content offline."<cite>— Implementation lead, enterprise partner</cite></blockquote>
-            <blockquote>"We need to severely restrict the creativity of this agent. It's not allowed to change the structure."<cite>— Compliance lead, regulated-industry partner</cite></blockquote>
-            <blockquote>"I'm not a coder... I've pretty much got an enterprise-level production-ready software that I've vibe coded."<cite>— Non-technical founder, SMB partner</cite></blockquote>
-          </div>
-          <div class="case-block">
-            <h4>Outcome</h4>
-            <p>I synthesized the findings into six validated opportunity hypotheses, ready for roadmap review:</p>
-            <div class="hyp-grid">
-              <div class="hyp"><b>Headless Capability</b>Unlock high-volume production without an open editor session</div>
-              <div class="hyp"><b>Deterministic Guardrails</b>API-level locking so agents can't touch legal/brand elements</div>
-              <div class="hyp"><b>AI-Ready Documentation</b>Docs structured for LLM ingestion, not just humans</div>
-              <div class="hyp"><b>Native Tool Grouping</b>Selective tool exposure for large agentic systems</div>
-              <div class="hyp"><b>Server-Side Template Analysis</b>Batch ingestion for legacy template libraries</div>
-              <div class="hyp"><b>Model/Provider Configurability</b>First-class support for EU hosting & model choice</div>
-            </div>
-            <p style="margin-top:14px;">The biggest reframe: "headless architecture" moved from a backlog nice-to-have to the single highest-priority blocker to enterprise adoption — now driving the next roadmap cycle.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CASE STUDY 02 — Arduino x Google -->
-      <div class="case reveal">
-        <div class="case-meta">
-          <span class="case-tag">Case Study 02 — 0→1, Hardware + Software</span>
-          <dl>
-            <dt>Role</dt><dd>Product Manager</dd>
-            <dt>Company</dt><dd>Arduino</dd>
-            <dt>Team</dt><dd>5 — engineering, UX, hardware</dd>
-            <dt>Partner</dt><dd>Google (Science Journal)</dd>
-          </dl>
-          <div class="case-badges">
-            <div class="badge"><span class="num">1M+</span><span class="txt">downloads since 2020 launch</span></div>
-            <div class="badge"><span class="num">+30%</span><span class="txt">users from new middle-school segment</span></div>
-            <div class="badge"><span class="num">$500K</span><span class="txt">funding secured for long-term roadmap</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3 class="title">Opening a new market with a $500K Google partnership</h3>
-          <p class="hook">Middle schools couldn't afford a physics lab. I shipped one — custom hardware, firmware, and a Google-integrated app — that reached 1M+ downloads.</p>
-
-          <div class="case-block">
-            <h4>Context</h4>
-            <p>Arduino Science Journal was already gaining traction in high schools and universities as an affordable alternative to expensive lab equipment. Researching how educators were using it in the classroom — including a workshop led by a physics professor at La Sapienza University in Rome — pointed to an underserved opportunity: middle school, a segment Arduino didn't serve yet.</p>
-          </div>
-          <div class="case-block">
-            <h4>Challenge</h4>
-            <p>Opening a new segment meant real constraints, not hypothetical ones: mapping content to the NGSS and UK National Science Curriculum, meeting health & safety compliance for physical kits, and building for COPPA/GDPR compliance since the end users were minors.</p>
-          </div>
-          <div class="case-block">
-            <h4>Approach</h4>
-            <p>I ran a Kanban/Waterfall process for hardware development — where lead times and physical constraints demand a different cadence — alongside an Agile process for content, design and Android software, so firmware could keep iterating on what we learned from content testing. I led the partnership negotiation with Google to integrate a custom Arduino MKR WiFi 1010 board over BLE directly into the official Google Science Journal app, coordinating engineering teams across both companies against an announced launch deadline.</p>
-          </div>
-          <div class="case-block">
-            <h4>Outcome</h4>
-            <p>Shipped a fully custom hardware kit, firmware, and CMS (content available in 6 languages) integrated into Google's app on the Play Store — showcased live at NSTA19 in St. Louis alongside Google's booth. The partnership also secured $500K to fund the long-term product roadmap, and the new middle-school segment grew total users by 30%.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CASE STUDY 03 — AI feature delivery at BEE -->
-      <div class="case reveal">
-        <div class="case-meta">
-          <span class="case-tag">Case Study 03 — AI Feature Delivery & Automation</span>
-          <dl>
-            <dt>Role</dt><dd>AI Product Manager</dd>
-            <dt>Company</dt><dd>BEE (Beefree)</dd>
-            <dt>Since</dt><dd>Aug 2023</dd>
-            <dt>Tools</dt><dd>n8n, Lovable, Claude</dd>
-          </dl>
-          <div class="case-badges">
-            <div class="badge"><span class="num">+30%</span><span class="txt">platform efficiency & user satisfaction</span></div>
-            <div class="badge"><span class="num">n8n + Lovable</span><span class="txt">automation workflows still in use today</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3 class="title">Shipping AI features on a no-code B2B SaaS platform</h3>
-          <p class="hook">Since 2023, I've worked on the AI features shipped on Beefree's email, landing page and pop-up builder — from early roadmap input to the automation workflows that still power experimentation today.</p>
-
-          <div class="case-block">
-            <h4>Context</h4>
-            <p>Beefree is a no-code B2B SaaS platform used to build email, landing page and pop-up content. As AI capability moved from novelty to expectation, the challenge was building AI-native workflows without breaking the simplicity that makes a no-code tool work in the first place.</p>
-          </div>
-          <div class="case-block">
-            <h4>Approach</h4>
-            <ul>
-              <li>Contributed to early product vision, roadmap and success metrics for AI-powered workflows</li>
-              <li>Partnered with cross-functional teams on discovery, delivery and post-launch optimization of AI features</li>
-              <li>Built automation workflows with n8n and Lovable that are still used to accelerate experimentation</li>
-              <li>Ran competitive and market research on AI trends to keep prioritization grounded in evidence, not hype</li>
-              <li>Established evaluation criteria for AI features balancing performance, usability and ethical considerations before anything ships</li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <h4>Outcome</h4>
-            <p>That work contributed to a 30% improvement in platform efficiency and user satisfaction, and the evaluation framework I built is still the one the team uses today to weigh AI features before they ship.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CLAUDE CODE SECTION -->
-  <section id="claude">
-    <div class="claude-sec reveal">
-      <div class="claude-inner">
-        <div class="eyebrow" style="color:var(--accent);">How I work</div>
-        <h2>Claude is my research analyst, my automation engineer — and the tool that built this site.</h2>
-        <div class="claude-grid">
-          <div class="claude-list">
-            <div class="claude-item">
-              <span class="n">01</span>
-              <div>
-                <h4>Research synthesis</h4>
-                <p>I feed raw discovery-call transcripts into Claude to build structured Jobs-to-be-Done analyses — forces, pains, confidence levels, opportunity hypotheses — in the time it used to take to write up a single call. The MCP case study above is a real example of that output.</p>
-              </div>
-            </div>
-            <div class="claude-item">
-              <span class="n">02</span>
-              <div>
-                <h4>Automation delivery</h4>
-                <p>I pair Claude with n8n and Lovable to go from "what if we automated this" to a working prototype in an afternoon, instead of waiting on a sprint slot.</p>
-              </div>
-            </div>
-            <div class="claude-item">
-              <span class="n">03</span>
-              <div>
-                <h4>This site</h4>
-                <p>Built end-to-end in collaboration with Claude — content, design system and code — as a working example of how I actually build, not just a line on a résumé.</p>
-              </div>
-            </div>
-          </div>
-          <div class="terminal">
-            <div class="term-bar"><span></span><span></span><span></span></div>
-            <div class="term-body">
-              <div>$ claude synthesize --calls discovery_q3</div>
-              <div class="c">→ reading 4 anonymized discovery-call transcripts...</div>
-              <div class="g">→ 3 core jobs identified</div>
-              <div class="g">→ push / pull / anxiety / habit forces mapped</div>
-              <div class="o">→ 6 opportunity hypotheses ready for roadmap review</div>
-              <div style="margin-top:14px;">$ claude build --project portfolio</div>
-              <div class="c">→ drafting content from CV + case studies...</div>
-              <div class="g">→ design system: clean, bold, minimal</div>
-              <div class="o">→ shipped.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2>Skills & tools</h2>
-        <p>What I reach for day to day.</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-col reveal">
-          <h3>Product Management</h3>
-          <div class="tags">
-            <span class="tag">Product strategy</span>
-            <span class="tag">Product discovery</span>
-            <span class="tag">Roadmapping</span>
-            <span class="tag">Backlog ownership</span>
-            <span class="tag">ShapeUp</span>
-            <span class="tag">Agile</span>
-            <span class="tag">Scrum</span>
-            <span class="tag">Kanban</span>
-            <span class="tag">OKRs</span>
-            <span class="tag">Stakeholder management</span>
-            <span class="tag">Go-to-market</span>
-          </div>
-        </div>
-        <div class="skill-col reveal">
-          <h3>AI & Automation</h3>
-          <div class="tags">
-            <span class="tag">AI product development</span>
-            <span class="tag">Prompt design</span>
-            <span class="tag">Model evaluation</span>
-            <span class="tag">Ethical AI</span>
-            <span class="tag">Automation workflows</span>
-            <span class="tag">No-code platforms</span>
-            <span class="tag">n8n</span>
-            <span class="tag">Lovable</span>
-            <span class="tag">Claude</span>
-          </div>
-        </div>
-        <div class="skill-col reveal">
-          <h3>Data & Tools</h3>
-          <div class="tags">
-            <span class="tag">Data-informed decisions</span>
-            <span class="tag">A/B testing</span>
-            <span class="tag">Metrics definition</span>
-            <span class="tag">Jira</span>
-            <span class="tag">Confluence</span>
-            <span class="tag">Miro</span>
-            <span class="tag">Mural</span>
-            <span class="tag">Airtable</span>
-            <span class="tag">Microsoft BI</span>
-            <span class="tag">Google Workspace</span>
-            <span class="tag">Slack</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2>Experience</h2>
-        <p>8+ years across MarTech and EdTech, B2B SaaS and 0→1 hardware.</p>
-      </div>
-      <div class="tl-controls reveal">
-        <div class="tl-filters" role="group" aria-label="Filter experience by company">
-          <button type="button" class="tl-filter active" data-filter="all" aria-pressed="true">All roles</button>
-          <button type="button" class="tl-filter" data-filter="bee" aria-pressed="false">BEE (Beefree)</button>
-          <button type="button" class="tl-filter" data-filter="arduino" aria-pressed="false">Arduino</button>
-          <button type="button" class="tl-filter" data-filter="early" aria-pressed="false">Early career</button>
-        </div>
-        <div class="tl-meta-row">
-          <span class="tl-count" id="tlCount">5 roles</span>
-          <button type="button" class="tl-toggle-all" id="tlToggleAll">Expand all</button>
-        </div>
-      </div>
-
-      <div class="timeline reveal" id="timeline">
-        <div class="tl-item" data-company="bee">
-          <div class="tl-date">Aug 2023 — Present</div>
-          <div class="tl-role">
-            <button type="button" class="tl-toggle" aria-expanded="true" aria-controls="tl-details-1">
-              <div>
-                <h4>AI Product Manager, B2B SaaS</h4>
-                <div class="co">BEE Content Design Inc., Turin</div>
-              </div>
-              <span class="tl-chevron" aria-hidden="true">+</span>
-            </button>
-            <div class="tl-details-wrap open" id="tl-details-1">
-              <div class="tl-details-inner">
-                <ul class="tl-details">
-                  <li>Work on AI-driven features for a no-code B2B SaaS platform (email, landing pages, pop-ups)</li>
-                  <li>Contributed to early product vision, roadmap and success metrics — helping lift efficiency and satisfaction by 30%</li>
-                  <li>Built automation workflows using n8n and Lovable, still used to accelerate experimentation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item" data-company="bee">
-          <div class="tl-date">Mar 2022 — Aug 2023</div>
-          <div class="tl-role">
-            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-2">
-              <div>
-                <h4>Senior Product Marketing Manager, B2B SaaS</h4>
-                <div class="co">BEE Content Design Inc., Turin</div>
-              </div>
-              <span class="tl-chevron" aria-hidden="true">+</span>
-            </button>
-            <div class="tl-details-wrap" id="tl-details-2">
-              <div class="tl-details-inner">
-                <ul class="tl-details">
-                  <li>Led go-to-market strategy for BEE Plugin in close partnership with Product</li>
-                  <li>Launched a new company website, increasing pageviews by 16%</li>
-                  <li>Conducted customer interviews and qualitative research to validate features</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item" data-company="arduino">
-          <div class="tl-date">Aug 2018 — Mar 2022</div>
-          <div class="tl-role">
-            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-3">
-              <div>
-                <h4>Product Manager, EdTech & SaaS</h4>
-                <div class="co">Arduino, Turin</div>
-              </div>
-              <span class="tl-chevron" aria-hidden="true">+</span>
-            </button>
-            <div class="tl-details-wrap" id="tl-details-3">
-              <div class="tl-details-inner">
-                <ul class="tl-details">
-                  <li>Owned product strategy and delivery for Arduino Science Journal and related educational products</li>
-                  <li>Led partnership negotiations with Google, securing $500K in funding</li>
-                  <li>Led COPPA and GDPR compliance for products targeting underage users</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item" data-company="arduino">
-          <div class="tl-date">Nov 2016 — Jan 2018</div>
-          <div class="tl-role">
-            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-4">
-              <div>
-                <h4>Product Marketing Manager, EdTech</h4>
-                <div class="co">Arduino, Turin</div>
-              </div>
-              <span class="tl-chevron" aria-hidden="true">+</span>
-            </button>
-            <div class="tl-details-wrap" id="tl-details-4">
-              <div class="tl-details-inner">
-                <ul class="tl-details">
-                  <li>Developed go-to-market strategy for Arduino Education Products</li>
-                  <li>Project-managed the Arduino 101 Starter Kit for Intel</li>
-                  <li>Led trade-show participation and events across the US and Europe</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tl-item" data-company="early">
-          <div class="tl-date">Early career</div>
-          <div class="tl-role">
-            <button type="button" class="tl-toggle" aria-expanded="false" aria-controls="tl-details-5">
-              <div>
-                <h4>Learning Innovation & Maker Education</h4>
-                <div class="co">Makerini Ltd · Ravensbourne University, London</div>
-              </div>
-              <span class="tl-chevron" aria-hidden="true">+</span>
-            </button>
-            <div class="tl-details-wrap" id="tl-details-5">
-              <div class="tl-details-inner">
-                <ul class="tl-details">
-                  <li>Learning Innovation Manager & Co-Founder, Makerini Ltd (London)</li>
-                  <li>Event Coordinator & Maker Education Consultant (London)</li>
-                  <li>Support Engineer for Learning Innovation, Ravensbourne University (London)</li>
-                  <li>Designed and delivered EdTech and STEAM educational initiatives</li>
-                  <li>Managed digital learning projects and trained educators on e-learning platforms</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="edu-grid">
-        <div class="reveal">
-          <h4>Education</h4>
-          <ul>
-            <li><b>MPhil in Pedagogy</b> — Università degli Studi di Torino (Ongoing)</li>
-            <li><b>Product Management Program Certificate</b> — UC Berkeley, Haas School of Business</li>
-            <li><b>BS in Education</b> (110 cum laude) — Università degli Studi di Roma Tre</li>
-          </ul>
-        </div>
-        <div class="reveal">
-          <h4>Certifications</h4>
-          <ul>
-            <li><b>Technical Foundations for Product Managers</b> — Maven (2024)</li>
-            <li><b>AI Micro-Certification (AIC)</b> — Product School (2024)</li>
-            <li><b>AI for Product Management</b> — Pendo (2024)</li>
-            <li><b>Product-Led Growth Certification</b> — Pendo, Product School (2022)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" style="padding-bottom:32px;">
-    <footer class="reveal">
-      <div class="eyebrow" style="justify-content:center;color:var(--accent);">Open to new roles</div>
-      <h2>Let's build something worth shipping.</h2>
-      <p class="sub">Turin, Italy · open to relocation & remote · currently AI Product Manager at BEE (Beefree).</p>
-      <div class="footer-cta">
-        <a href="mailto:valentina.chinnici@gmail.com" class="btn btn-primary">valentina.chinnici@gmail.com</a>
-        <a href="https://www.linkedin.com/in/valentinachinnici/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Connect on LinkedIn ↗</a>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Valentina Chinnici</span>
-        <span class="credit"><span class="dot"></span>Built in collaboration with Claude</span>
-      </div>
-    </footer>
-  </section>
-
 </main>
 
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 <script>
-  // scroll reveal — with graceful fallback so content is never stuck invisible
-  const els = document.querySelectorAll('.reveal');
-  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!('IntersectionObserver' in window) || prefersReduced){
-    els.forEach(el=>el.classList.add('in'));
-  } else {
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    },{threshold:0.12});
-    els.forEach(el=>io.observe(el));
-  }
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const icons = () => window.lucide && lucide.createIcons({attrs:{'aria-hidden':'true'}});
 
-  // mobile nav
-  const style = document.createElement('style');
-  style.textContent = `.links.mobile-open{display:flex !important;position:fixed;top:64px;left:0;right:0;background:var(--paper);flex-direction:column;padding:24px 32px;border-bottom:1px solid var(--line);gap:18px;}`;
-  document.head.appendChild(style);
-
-  // reliable in-page navigation for all hash links (nav, hero CTA, logo)
-  const headerEl = document.querySelector('header.nav');
-  document.querySelectorAll('a[href^="#"]').forEach(link=>{
-    link.addEventListener('click', function(e){
-      const targetId = this.getAttribute('href');
-      if(!targetId || targetId.length < 2) return;
-      const target = document.querySelector(targetId);
-      if(!target) return;
-      e.preventDefault();
-      const headerH = headerEl ? headerEl.offsetHeight : 0;
-      const top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
-      window.scrollTo({top, behavior:'smooth'});
-      // close mobile menu after navigating
-      document.querySelector('.links').classList.remove('mobile-open');
-      const burger = document.getElementById('burgerBtn');
-      if(burger){ burger.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
-    });
+  // pause the looping aurora and twinkling stars
+  document.getElementById('motion').addEventListener('click', e => {
+    const b = e.currentTarget, off = document.body.classList.toggle('paused');
+    b.setAttribute('aria-pressed', off);
+    b.querySelector('span').textContent = off ? 'Play motion' : 'Pause motion';
   });
 
-  // ---------- Interactive experience timeline ----------
+  // score across the four games
+  const won = new Set();
+  function win(id){
+    if (won.has(id)) return;
+    won.add(id);
+    document.getElementById('scoreN').textContent = won.size;
+    const s = document.getElementById('score');
+    s.classList.add('bump'); setTimeout(() => s.classList.remove('bump'), 600);
+    const tag = document.querySelector('#' + id + ' .game-tag');
+    if (tag) tag.classList.add('won');
+    if (won.size === 4) document.getElementById('contactTitle').textContent = 'You played all four. Let\'s talk.';
+  }
+  const shake = el => { el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); };
+
+  // GAME 1: pointer speed as a Science Journal-style sensor
   (function(){
-    const tlItems = Array.from(document.querySelectorAll('.tl-item'));
-    const filterBtns = Array.from(document.querySelectorAll('.tl-filter'));
-    const toggleBtns = Array.from(document.querySelectorAll('.tl-toggle'));
-    const countEl = document.getElementById('tlCount');
-    const toggleAllBtn = document.getElementById('tlToggleAll');
-    if(!tlItems.length) return;
-
-    function setDetailsOpen(toggleBtn, open){
-      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      const wrap = document.getElementById(toggleBtn.getAttribute('aria-controls'));
-      if(wrap) wrap.classList.toggle('open', open);
-      const chevron = toggleBtn.querySelector('.tl-chevron');
-      if(chevron) chevron.textContent = '+';
+    const trace = document.getElementById('trace'), out = document.getElementById('reading'), meter = document.getElementById('meter');
+    const stickers = document.getElementById('stickers'), aurora = document.getElementById('aurora'), GOAL = 2500, N = 120, W = 600, H = 140, pts = new Array(N).fill(0);
+    let speed = 0, lastX = null, lastY = null, lastT = 0, t = 0, running = false, unlocked = false;
+    function unlock(played){
+      if (unlocked) return;
+      unlocked = true;
+      stickers.classList.add('open');
+      document.getElementById('skip1').hidden = true;
+      if (played) win('g1');
     }
-
-    // individual accordion toggles
-    toggleBtns.forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const isOpen = btn.getAttribute('aria-expanded') === 'true';
-        setDetailsOpen(btn, !isOpen);
-        syncToggleAllLabel();
-      });
-    });
-
-    function syncToggleAllLabel(){
-      const visibleToggles = toggleBtns.filter(b => b.closest('.tl-item').style.display !== 'none');
-      const allOpen = visibleToggles.length > 0 && visibleToggles.every(b => b.getAttribute('aria-expanded') === 'true');
-      toggleAllBtn.textContent = allOpen ? 'Collapse all' : 'Expand all';
+    document.getElementById('skip1').addEventListener('click', () => unlock(false));
+    addEventListener('pointermove', e => {
+      const now = performance.now();
+      // cap so a jump (tab switch, new touch) can't spike the graph
+      if (lastX !== null && now > lastT) speed = Math.min(4000, Math.max(speed, Math.hypot(e.clientX - lastX, e.clientY - lastY) / (now - lastT) * 1000));
+      lastX = e.clientX; lastY = e.clientY; lastT = now;
+    }, {passive:true});
+    const draw = () => trace.setAttribute('points', pts.map((v,i) => (i * W / (N - 1)).toFixed(1) + ',' + (H - 16 - Math.min(v, 1) * (H - 32)).toFixed(1)).join(' '));
+    function tick(){
+      t += 0.08;
+      speed *= 0.9;
+      pts.shift();
+      pts.push(Math.min(speed / 3500, 1) + 0.06 + Math.sin(t) * 0.03 + Math.random() * 0.02);
+      out.textContent = Math.round(speed).toLocaleString('en');
+      meter.style.width = Math.min(speed / GOAL, 1) * 100 + '%';
+      aurora.style.setProperty('--energy', Math.min(speed / GOAL, 1).toFixed(3));
+      if (speed >= GOAL) unlock(true);
+      draw();
+      if (running) requestAnimationFrame(tick);
     }
-
-    // expand all / collapse all
-    toggleAllBtn.addEventListener('click', ()=>{
-      const visibleToggles = toggleBtns.filter(b => b.closest('.tl-item').style.display !== 'none');
-      const allOpen = visibleToggles.length > 0 && visibleToggles.every(b => b.getAttribute('aria-expanded') === 'true');
-      visibleToggles.forEach(b => setDetailsOpen(b, !allOpen));
-      toggleAllBtn.textContent = allOpen ? 'Expand all' : 'Collapse all';
-    });
-
-    // company filters
-    filterBtns.forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        filterBtns.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed','true');
-        const filter = btn.dataset.filter;
-        let visible = 0;
-        tlItems.forEach(item=>{
-          const show = filter === 'all' || item.dataset.company === filter;
-          item.style.display = show ? '' : 'none';
-          if(show) visible++;
-        });
-        countEl.textContent = visible + (visible === 1 ? ' role' : ' roles');
-        syncToggleAllLabel();
-      });
-    });
-
-    syncToggleAllLabel();
+    if (still){ for (let i = 0; i < N; i++) pts[i] = 0.1 + Math.sin(i / 6) * 0.05; draw(); unlock(false); return; }
+    new IntersectionObserver(([e]) => { const was = running; running = e.isIntersecting; if (running && !was) tick(); }).observe(trace.closest('.sensor'));
   })();
-</script>
 
+  // GAME 2: match each quote to the job behind it
+  (function(){
+    const qs = [...document.querySelectorAll('#g2 .q')];
+    qs.forEach(q => q.querySelectorAll('.opt').forEach(b => b.addEventListener('click', () => {
+      const fb = q.querySelector('.fb');
+      if (b.dataset.v === q.dataset.a){
+        q.classList.add('right');
+        q.querySelectorAll('.opt').forEach(o => o.disabled = true);
+        b.classList.add('is-right');
+        fb.className = 'fb good'; fb.textContent = q.dataset.why;
+        const nextQ = qs.find(x => !x.classList.contains('right'));
+        if (nextQ) nextQ.querySelector('.opt:not(:disabled)').focus({preventScroll:true});
+        if (qs.every(x => x.classList.contains('right'))){ document.getElementById('prize2').classList.add('on'); document.getElementById('g2').classList.add('sorted'); win('g2'); }
+      } else {
+        b.classList.add('is-wrong'); b.disabled = true; shake(b);
+        q.querySelector('.opt:not(:disabled)').focus({preventScroll:true});
+        fb.className = 'fb bad'; fb.textContent = 'Not quite. Read it again: what do they need done?';
+      }
+    })));
+  })();
+
+  // GAME 3: put the parts in signal order
+  (function(){
+    const parts = [...document.querySelectorAll('#parts .part')], slots = [...document.querySelectorAll('#chain li')], fb = document.getElementById('fb3');
+    const hints = {1:'start where the measurement happens.', 2:'how does the board talk to the phone?', 3:'where do students see the data?', 4:'who uses it?'};
+    let next = 1;
+    parts.forEach(p => p.addEventListener('click', () => {
+      if (+p.dataset.step === next){
+        p.disabled = true;
+        const left = parts.find(x => !x.disabled);
+        if (left) left.focus({preventScroll:true});
+        const slot = slots[next - 1];
+        slot.innerHTML = p.innerHTML; slot.className = 'filled';
+        next++;
+        fb.className = 'fb good';
+        fb.textContent = next > 4 ? 'Signal reaches the classroom.' : 'Connected. Next: ' + hints[next];
+        if (next > 4){ document.getElementById('prize3').classList.add('on'); document.getElementById('g3').classList.add('swinging'); win('g3'); }
+      } else {
+        shake(p); p.classList.add('nope'); setTimeout(() => p.classList.remove('nope'), 600);
+        fb.className = 'fb bad'; fb.textContent = 'Not yet. Hint: ' + hints[next];
+      }
+    }));
+  })();
+
+  // GAME 4: ship or hold, three rounds
+  (function(){
+    const rounds = [
+      {name:'Subject line suggestions', perf:9, use:8, eth:8},
+      {name:'One-click rewrite of a whole email', perf:8, use:4, eth:7},
+      {name:'Personalization from inferred personal data', perf:9, use:9, eth:3},
+    ];
+    const box = document.getElementById('ship'), fb = document.getElementById('fb4');
+    let i = 0, right = 0;
+    const bar = (icon, label, n) => `<div class="bar${n < 6 ? ' low' : ''}"><span class="label"><i data-lucide="${icon}"></i>${label}</span><span class="track"><i style="width:${n * 10}%"></i></span><span class="n">${n}</span></div>`;
+    function render(focus){
+      const r = rounds[i];
+      box.innerHTML = `<div class="feature"><div class="round">Feature ${i + 1} of ${rounds.length}</div><h4>${r.name}</h4><div class="bars">${bar('gauge','Performance',r.perf)}${bar('hand','Usability',r.use)}${bar('shield-check','Ethics',r.eth)}</div><div class="choices"><button type="button" class="btn" data-c="ship"><i data-lucide="rocket"></i>Ship it</button><button type="button" class="btn ghost" data-c="hold"><i data-lucide="hand"></i>Hold</button></div></div>`;
+      icons();
+      box.querySelectorAll('[data-c]').forEach(b => b.addEventListener('click', () => answer(b.dataset.c)));
+      if (focus) box.querySelector('[data-c]').focus({preventScroll:true});
+    }
+    function answer(c){
+      const r = rounds[i], ok = Math.min(r.perf, r.use, r.eth) >= 6, correct = (c === 'ship') === ok;
+      if (correct) right++;
+      const why = ok ? 'All three clear the bar.' : (r.use < 6 ? 'Usability is too low: it would break the no-code feel.' : 'Ethics is too low: no shipping on inferred personal data.');
+      fb.className = 'fb ' + (correct ? 'good' : 'bad');
+      fb.textContent = (correct ? 'Good call. ' : 'I\'d have made the other call. ') + why;
+      i++;
+      if (i < rounds.length) render(true);
+      else {
+        box.innerHTML = `<div class="feature"><h4>You got ${right} of ${rounds.length}</h4><button type="button" class="btn ghost" id="again"><i data-lucide="rotate-ccw"></i>Play again</button></div>`;
+        icons();
+        const again = document.getElementById('again');
+        again.addEventListener('click', () => { i = 0; right = 0; fb.textContent = ''; render(true); });
+        again.focus({preventScroll:true});
+        document.getElementById('prize4').classList.add('on');
+        document.getElementById('g4').classList.add('launched');
+        win('g4');
+      }
+    }
+    render();
+  })();
+
+  // terminal types itself when it scrolls into view
+  (function(){
+    const lines = document.querySelectorAll('#term .l');
+    if (still || !('IntersectionObserver' in window)){ lines.forEach(l => l.classList.add('on')); return; }
+    const io = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      io.disconnect();
+      lines.forEach((l, i) => setTimeout(() => l.classList.add('on'), i * 380));
+    }, {threshold:0.5});
+    io.observe(document.getElementById('term'));
+  })();
+
+  // experience: filters and expandable roles
+  (function(){
+    const jobs = [...document.querySelectorAll('.job')], btns = [...document.querySelectorAll('.job-btn')];
+    const filters = [...document.querySelectorAll('.filter')], all = document.getElementById('toggleAll'), count = document.getElementById('count');
+    const set = (b, open) => { b.setAttribute('aria-expanded', open); document.getElementById(b.getAttribute('aria-controls')).classList.toggle('open', open); };
+    const visible = () => btns.filter(b => !b.closest('.job').hidden);
+    const allOpen = () => visible().every(b => b.getAttribute('aria-expanded') === 'true');
+    const sync = () => { all.textContent = allOpen() ? 'Collapse all' : 'Expand all'; };
+    btns.forEach(b => b.addEventListener('click', () => { set(b, b.getAttribute('aria-expanded') !== 'true'); sync(); }));
+    all.addEventListener('click', () => { const open = !allOpen(); visible().forEach(b => set(b, open)); sync(); });
+    filters.forEach(f => f.addEventListener('click', () => {
+      filters.forEach(x => x.setAttribute('aria-pressed', x === f));
+      let n = 0;
+      jobs.forEach(j => { j.hidden = !(f.dataset.f === 'all' || j.dataset.co === f.dataset.f); if (!j.hidden) n++; });
+      count.textContent = n + (n === 1 ? ' role' : ' roles');
+      sync();
+    }));
+    sync();
+  })();
+
+  icons();
+</script>
 </body>
 </html>
